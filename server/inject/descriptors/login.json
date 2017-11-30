@@ -5,6 +5,11 @@
       "type": "identifier",
       "selector": "body",
       "control": "exists"
+    },
+    "n": {
+      "type": "string",
+      "selector": "#gsr",
+      "control": "property.innerText"
     }
   },
   "connect": [
