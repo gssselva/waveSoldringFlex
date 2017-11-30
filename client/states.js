@@ -42,14 +42,5 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.logincool', {
-        views: {
-            app: {
-                controller: 'app_logincool',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.logincool');
-                }
-            }
-        }
     });
 });
