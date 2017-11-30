@@ -10,6 +10,11 @@
       "type": "string",
       "selector": "#gsr",
       "control": "property.innerText"
+    },
+    "ff": {
+      "type": "string",
+      "selector": "#gsr",
+      "control": "property.innerText"
     }
   },
   "connect": [
