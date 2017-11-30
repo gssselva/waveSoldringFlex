@@ -5,6 +5,18 @@
       "type": "identifier",
       "selector": "body",
       "control": "exists"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "errorMessage": {
+      "type": "string"
+    },
+    "submit": {
+      "type": "action"
     }
   },
   "connect": [
