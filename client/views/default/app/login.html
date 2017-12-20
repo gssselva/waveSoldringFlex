@@ -23,11 +23,13 @@
             <label
                 class="item item-input item-stacked-label item-outside-label royal-border royal-bg"
                 data-comp-id="textInput.1" style="margin: 30px 10px 0px;">
-                <input class=" placeholder-positive" placeholder="ADID" style="" type="text">
+                <input class=" placeholder-positive" ng-model="data.username" placeholder="ADID"
+                    style="" type="text">
             </label>
             <label class="item item-input royal-bg royal-border" data-comp-id="textInput.2"
                 style="margin: 20px 10px 0px;">
-                <input class=" placeholder-positive" placeholder="Password" type="password">
+                <input class=" placeholder-positive" ng-model="data.password"
+                    placeholder="Password" type="password">
             </label>
             <button class="button button-full light-icon" data-comp-id="button.1"
                 style="margin: 10px 10px 0px; width: 94%; color: rgb(255, 255, 255); background-color: rgb(141, 221, 46);">Login</button>
