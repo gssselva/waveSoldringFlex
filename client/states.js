@@ -6,12 +6,12 @@ angular.module('app').config(function ($stateProvider) {
         templateProvider: function (app) {
             return app.templateProvider('app');
         }
-    }).state('app.blank', {
+    }).state('app.loginscreen', {
         views: {
             app: {
-                controller: 'app_blank',
+                controller: 'app_loginscreen',
                 templateProvider: function (app) {
-                    return app.templateProvider('app.blank');
+                    return app.templateProvider('app.loginscreen');
                 }
             }
         }
@@ -39,6 +39,15 @@ angular.module('app').config(function ($stateProvider) {
                 controller: 'app_login',
                 templateProvider: function (app) {
                     return app.templateProvider('app.login');
+                }
+            }
+        }
+    }).state('app.sitepage', {
+        views: {
+            app: {
+                controller: 'app_sitepage',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.sitepage');
                 }
             }
         }

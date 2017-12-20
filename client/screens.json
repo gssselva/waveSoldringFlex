@@ -4,10 +4,11 @@
   "startScreen": "app.login",
   "screens": [
     {
-      "id": "blank",
-      "name": "BLANK",
+      "id": "loginscreen",
+      "name": "loginscreen",
       "sourceAppId": "_blank",
-      "sourceScreenId": "app.blank"
+      "sourceScreenId": "app.blank",
+      "model": "login"
     },
     {
       "id": "menu",
@@ -23,10 +24,16 @@
     },
     {
       "id": "login",
-      "name": "Login",
+      "name": "login",
       "sourceScreenId": "app.login.loginclassic",
       "sourceAppId": "universaltemplates",
       "model": "login"
+    },
+    {
+      "id": "sitepage",
+      "name": "sitepage",
+      "sourceScreenId": "app.menu",
+      "sourceAppId": "_blank"
     }
   ],
   "sourceAppId": "_blank",
