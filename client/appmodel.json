@@ -51,7 +51,14 @@
         "type": "array",
         "items": {
           "type": "object",
-          "properties": {}
+          "properties": {
+            "company": {
+              "type": "string"
+            },
+            "isDefaultCompany": {
+              "type": "string"
+            }
+          }
         }
       }
     }
