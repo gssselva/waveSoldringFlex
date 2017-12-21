@@ -33,7 +33,8 @@
       "id": "sitepage",
       "name": "sitepage",
       "sourceScreenId": "app.menu",
-      "sourceAppId": "_blank"
+      "sourceAppId": "_blank",
+      "model": "sitepreference"
     }
   ],
   "sourceAppId": "_blank",
