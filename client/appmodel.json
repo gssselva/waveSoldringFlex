@@ -42,5 +42,18 @@
         }
       }
     }
+  },
+  "sitepreference": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "sitelist": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    }
   }
 }
