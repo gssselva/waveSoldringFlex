@@ -4,6 +4,7 @@ function app_login($scope, app, $q) {
     app.init($scope);
     if (!$scope.data) {
         $scope.data = {};
+        console.log('data objects -->', $scope.data);
     }
     var checkSupport = function () {
         var deferred = $q.defer();
