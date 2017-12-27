@@ -35,6 +35,12 @@
       "sourceScreenId": "app.menu",
       "sourceAppId": "_blank",
       "model": "sitepreference"
+    },
+    {
+      "id": "site",
+      "name": "site",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
     }
   ],
   "sourceAppId": "_blank",
