@@ -5,50 +5,13 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class="has-header" data-comp-id="ionic-content.1">
-        <div class="row" data-comp-id="row.1">
-            <div class="col" data-comp-id="column.1"></div>
+        <div class="item item-icon-right" data-comp-id="item.1"
+            ng-repeat="item in data.sitelist">
+            <div data-comp-id="text.1" ng-bind="item.company">
+                Some text
+                <span class="item-note"></span>
+            </div>
+            <i class="icon ion-ios-arrow-right" data-comp-id="icon.1" style="font-size:32px"></i>
         </div>
     </ion-content>
-    <div data-comp-id="div.1">
-        <div class="row" data-comp-id="row.2">
-            <div class="col" data-comp-id="column.2">
-                <div class=" text-center" data-comp-id="text.1" style="font-size: 16px;">Site / Company</div>
-            </div>
-        </div>
-        <div class="row" data-comp-id="row.3">
-            <div class="col" data-comp-id="column.3">
-                <div class="row search-input" data-comp-id="searchInput.1">
-                    <div class="col" style="width">
-                        <label class="item item-input">
-                            <i class="icon ion-search placeholder-icon"></i>
-                            <input placeholder="Search" type="text">
-                        </label>
-                    </div>
-                    <i class="icon ion-ios-gear-outline" ng-if="false"></i>
-                </div>
-            </div>
-        </div>
-        <div class="row" data-comp-id="row.4">
-            <div class="col" data-comp-id="column.4">
-                <div class="item item-icon-right" data-comp-id="item.1"
-                    ng-repeat="item in data.sitelist">
-                    <div data-comp-id="text.2" ng-bind="item.company">
-                        Some text
-                        <span class="item-note"></span>
-                    </div>
-                    <i class="icon ion-ios-arrow-right" data-comp-id="icon.1" style="font-size:32px"></i>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="item item-icon-right" data-comp-id="item.2"
-                ng-repeat="item in data.sitelist">
-                <div data-comp-id="text.3" ng-bind="item.CompanyName">
-                    Some text
-                    <span class="item-note"></span>
-                </div>
-                <i class="icon ion-ios-arrow-right" data-comp-id="icon.2" style="font-size:32px"></i>
-            </div>
-        </div>
-    </div>
 </ion-view>
