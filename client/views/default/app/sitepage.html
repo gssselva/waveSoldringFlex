@@ -30,8 +30,9 @@
         </div>
         <div class="row" data-comp-id="row.4">
             <div class="col" data-comp-id="column.4">
-                <div class="item item-icon-right" data-comp-id="item.1">
-                    <div data-comp-id="text.2">
+                <div class="item item-icon-right" data-comp-id="item.1"
+                    ng-repeat="item in data.sitelist">
+                    <div data-comp-id="text.2" ng-bind="item.CompanyName">
                         Some text
                         <span class="item-note"></span>
                     </div>
