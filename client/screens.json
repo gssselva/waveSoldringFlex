@@ -34,7 +34,7 @@
       "name": "sitepage",
       "sourceScreenId": "app.menu",
       "sourceAppId": "_blank",
-      "model": "sitepreference"
+      "model": "sitepage"
     },
     {
       "id": "site",

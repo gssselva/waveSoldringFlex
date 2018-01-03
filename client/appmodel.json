@@ -43,29 +43,6 @@
       }
     }
   },
-  "sitepreference": {
-    "type": "object",
-    "comment": "",
-    "properties": {
-      "sitelist": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "company": {
-              "type": "string"
-            },
-            "isDefaultCompany": {
-              "type": "string"
-            }
-          }
-        },
-        "update": {
-          "type": "none"
-        }
-      }
-    }
-  },
   "homecool": {
     "type": "object",
     "comment": "",
@@ -87,6 +64,29 @@
       },
       "action6": {
         "type": "action"
+      }
+    }
+  },
+  "sitepage": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "sitelist": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "company": {
+              "type": "string"
+            },
+            "isDefaultCompany": {
+              "type": "string"
+            }
+          }
+        },
+        "update": {
+          "type": "none"
+        }
       }
     }
   }
