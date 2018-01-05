@@ -70,7 +70,7 @@
     "type": "object",
     "comment": "ListView",
     "properties": {
-      "dashboardlist": {
+      "dashboard_list": {
         "type": "array",
         "items": {
           "type": "object",
