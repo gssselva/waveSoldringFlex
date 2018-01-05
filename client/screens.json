@@ -35,6 +35,13 @@
       "sourceScreenId": "app.menu",
       "sourceAppId": "_blank",
       "model": "sitepage"
+    },
+    {
+      "id": "dashboard",
+      "name": "dashboard",
+      "sourceScreenId": "app.listview.listviewcool",
+      "sourceAppId": "universaltemplates",
+      "model": "dashboard"
     }
   ],
   "sourceAppId": "_blank",
