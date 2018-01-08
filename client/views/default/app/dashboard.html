@@ -47,15 +47,21 @@
                 </div>
             </div>
         </div>
-        <ion-list data-comp-id="ionic-list.1">
-            <div class="item item-icon-right" data-comp-id="item.1"
-                ng-click="app.action('listview', 'data.dashboard_list[item].action', this)"
-                ng-repeat="item in data.dashboard_list.ServicesPou"
-                style="border-top: 1px solid rgba(255, 255, 255, 0);">
-                <div class=" positive" data-comp-id="text.10" ng-bind="item.BuildingCode">Price &amp; Availability</div>
-                <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
-                    style="font-size: 20px;"></i>
+        <div class="card" data-comp-display="card.1" data-comp-id="div.2">
+            <div class="row" data-comp-id="row.5">
+                <div class="col" data-comp-id="column.7">
+                    <ion-list data-comp-id="ionic-list.1">
+                        <div class="item item-icon-right" data-comp-id="item.1"
+                            ng-click="app.action('listview', 'data.dashboard_list[item].action', this)"
+                            ng-repeat="item in data.dashboard_list.ServicesPou"
+                            style="border-top: 1px solid rgba(255, 255, 255, 0);">
+                            <div class=" positive" data-comp-id="text.10" ng-bind="item.BuildingCode">Price &amp; Availability</div>
+                            <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
+                                style="font-size: 20px;"></i>
+                        </div>
+                    </ion-list>
+                </div>
             </div>
-        </ion-list>
+        </div>
     </ion-content>
 </ion-view>
