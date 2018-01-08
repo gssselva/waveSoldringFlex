@@ -48,6 +48,7 @@
             </div>
         </div>
         <div class="card" data-comp-display="card.1" data-comp-id="div.2"
+            ng-click="app.action('listview', 'data.dashboard_list[item].action', this)"
             ng-repeat="item in data.dashboard_list.ServicesPou">
             <div class="row" data-comp-id="row.5">
                 <div class="col" data-comp-id="column.7">
@@ -59,14 +60,30 @@
             </div>
             <div class="row" data-comp-id="row.6">
                 <div class="col" data-comp-id="column.9">
+                    <div data-comp-id="text.12" ng-bind="item.ServiceName">Some text</div>
+                    <div class="row" data-comp-id="row.7">
+                        <div class="col" data-comp-id="column.10">
+                            <div class=" stable-bg" data-comp-id="div.3" style="border-radius: 8px;">
+                                <div class=" text-center" data-comp-id="text.13"
+                                    ng-bind="item.DowntimeEventCount" style="color: rgb(26, 146, 204);">Some text</div>
+                                <div data-comp-id="text.14" style="font-size: 11px;">Downtime Events</div>
+                            </div>
+                        </div>
+                        <div class="col" data-comp-id="column.11">
+                            <div class=" stable-bg" data-comp-id="div.4" style="border-radius: 8px;">
+                                <div class=" text-center" data-comp-id="text.15"
+                                    ng-bind="item.ScannedEventCount" style="color: rgb(26, 146, 204);">Some text</div>
+                                <div class=" text-center" data-comp-id="text.16" style="font-size: 11px;">Pallet QTY</div>
+                            </div>
+                        </div>
+                        <div class="col" data-comp-id="column.12"></div>
+                        <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
+                            style="font-size: 20px;"></i>
+                    </div>
                     <ion-list data-comp-id="ionic-list.1">
                         <div class="item item-icon-right" data-comp-id="item.1"
                             ng-click="app.action('listview', 'data.dashboard_list[item].action', this)"
-                            style="border-top: 1px solid rgba(255, 255, 255, 0);">
-                            <div class=" positive" data-comp-id="text.12" ng-bind="item.BuildingCode">Price &amp; Availability</div>
-                            <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
-                                style="font-size: 20px;"></i>
-                        </div>
+                            style="border-top: 1px solid rgba(255, 255, 255, 0);"></div>
                     </ion-list>
                 </div>
             </div>
