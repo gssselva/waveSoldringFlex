@@ -9,12 +9,44 @@
         </ion-nav-buttons>
     </ion-nav-bar>
     <ion-content data-comp-id="ionic-content.1">
+        <div data-comp-id="div.1"
+            style="background: url('images/bg.png') center/100% 100%">
+            <div class="row" data-comp-id="row.1">
+                <div class="col" data-comp-id="column.1">
+                    <div data-comp-id="text.1">Some text</div>
+                </div>
+            </div>
+            <div class="row" data-comp-id="row.2">
+                <div class="col col-33" data-comp-id="column.2">
+                    <div data-comp-id="text.2">Some text</div>
+                    <div class="row" data-comp-id="row.3">
+                        <div class="col" data-comp-id="column.3">
+                            <div data-comp-id="text.3">Some text</div>
+                            <div data-comp-id="text.4">Some text</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-comp-id="column.4">
+                    <div data-comp-id="text.5">Some text</div>
+                    <div class="row" data-comp-id="row.4">
+                        <div class="col" data-comp-id="column.5">
+                            <div data-comp-id="text.6">Some text</div>
+                            <div data-comp-id="text.7">Some text</div>
+                        </div>
+                        <div class="col" data-comp-id="column.6">
+                            <div data-comp-id="text.8">Some text</div>
+                            <div data-comp-id="text.9">Some text</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <ion-list data-comp-id="ionic-list.1">
             <div class="item item-icon-right" data-comp-id="item.1"
                 ng-click="app.action('listview', 'data.dashboard_list[item].action', this)"
                 ng-repeat="item in data.dashboard_list.ServicesPou"
                 style="border-top: 1px solid rgba(255, 255, 255, 0);">
-                <div class=" positive" data-comp-id="text.1" ng-bind="item.BuildingCode">Price &amp; Availability</div>
+                <div class=" positive" data-comp-id="text.10" ng-bind="item.BuildingCode">Price &amp; Availability</div>
                 <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
                     style="font-size: 20px;"></i>
             </div>
