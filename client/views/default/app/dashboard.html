@@ -14,7 +14,7 @@
             <div class="row" data-comp-id="row.1">
                 <div class="col" data-comp-id="column.1">
                     <div class=" text-center" data-comp-id="text.1"
-                        style="color: rgb(26, 146, 204);">code - company name</div>
+                        ng-bind="data.dashboard_list.CompanyCode" style="color: rgb(26, 146, 204);">code - company name</div>
                 </div>
             </div>
             <div class="row" data-comp-id="row.2">
@@ -24,7 +24,8 @@
                         style="background-color: rgba(81, 64, 64, 0.57); border-radius: 5px;">
                         <div class="col" data-comp-id="column.3">
                             <div class="text-center" data-comp-id="text.3" style="color: white">TOTAL</div>
-                            <div class="text-center" data-comp-id="text.4" style="color: white;">01</div>
+                            <div class="text-center" data-comp-id="text.4"
+                                ng-bind="data.dashboard_list.ServicesIdCount" style="color: white;">01</div>
                         </div>
                     </div>
                 </div>
@@ -34,11 +35,13 @@
                         style="background-color: rgba(81, 64, 64, 0.57); border-radius: 5px;">
                         <div class="col" data-comp-id="column.5">
                             <div class="text-center light" data-comp-id="text.6">ON</div>
-                            <div class="text-center light" data-comp-id="text.7">02</div>
+                            <div class="text-center light" data-comp-id="text.7"
+                                ng-bind="data.dashboard_list.ServicesOnCount">02</div>
                         </div>
                         <div class="col" data-comp-id="column.6">
                             <div class="text-center light" data-comp-id="text.8">OFF</div>
-                            <div class="text-center light" data-comp-id="text.9">03</div>
+                            <div class="text-center light" data-comp-id="text.9"
+                                ng-bind="data.dashboard_list.ServicesOffCount">03</div>
                         </div>
                     </div>
                 </div>
