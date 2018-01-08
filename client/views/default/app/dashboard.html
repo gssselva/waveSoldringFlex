@@ -49,6 +49,15 @@
         </div>
         <div class="card" data-comp-display="card.1" data-comp-id="div.2"
             ng-repeat="item in data.dashboard_list.ServicesPou">
+            <div class="row" data-comp-id="row.6">
+                <div class="col" data-comp-id="column.8">
+                    <div data-comp-id="text.11"
+                        ng-bind="data.dashboard_list.ServicesPou.BuildingCode">Some text</div>
+                </div>
+                <div class="col" data-comp-id="column.9">
+                    <div data-comp-id="text.12" ng-bind="data.dashboard_list.ServicesPou.IsStopped">Some text</div>
+                </div>
+            </div>
             <div class="row" data-comp-id="row.5">
                 <div class="col" data-comp-id="column.7">
                     <ion-list data-comp-id="ionic-list.1">
