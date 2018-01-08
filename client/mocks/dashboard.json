@@ -1,56 +1,36 @@
 {
-  "dashboard_list": [
+  "dashboard_list": {
+  "ServicesIdCount": 2,
+  "ServicesOnCount": 2,
+  "CompanyCode": "2391",
+  "Companyname": "FLEX.INTERNATIONAL EUROPE B.V.",
+  "ServicesOffCount": 0,
+  "CurrentDateTime": "04 Jan 18",
+  "ServicesPou": [
     {
-      "string": "Price & Availability",
-      "icon": "fa-tag"
+      "BuildingCode": "CST_WS_B1",
+      "BuildingName": "Wave Soldering Test Building",
+      "ServiceCode": "CS_TEST_POU1",
+      "IsStopped": false,
+      "DowntimeEventCount": 1,
+      "ScannedEventCount": 0,
+      "CurrentDowntimeStatus": "Downtime",
+      "TotalDowntimeDuration": null,
+      "ServiceName": "CS_TEST_POU1",
+      "DowntimeHrMin": "11:48:52:000"
     },
     {
-      "string": "Search by Part Number",
-      "icon": "fa-search"
-    },
-    {
-      "string": "Browse Products",
-      "icon": "fa-cogs"
-    },
-    {
-      "string": "Direct Order Entry",
-      "icon": "fa-file-text"
-    },
-    {
-      "string": "Import Order",
-      "icon": "fa-download"
-    },
-    {
-      "string": "View Order History",
-      "icon": "fa-history"
-    },
-    {
-      "string": "Quick Quote Entry",
-      "icon": "fa-calculator"
-    },
-    {
-      "string": "SP/SD Request",
-      "icon": "fa-money"
-    },
-    {
-      "string": "SD Claim",
-      "icon": "fa-bullhorn"
-    },
-    {
-      "string": "RMA",
-      "icon": "fa-archive"
-    },
-    {
-      "string": "Stock Rotation",
-      "icon": "fa-repeat"
-    },
-    {
-      "string": "New Part Number",
-      "icon": "fa-cog"
-    },
-    {
-      "string": "View/Print Statement",
-      "icon": "fa-print"
+      "BuildingCode": "CST_WS_B2",
+      "BuildingName": "Wave Soldering Test Building",
+      "ServiceCode": "CS_TEST_POU2",
+      "IsStopped": false,
+      "DowntimeEventCount": 1,
+      "ScannedEventCount": 0,
+      "CurrentDowntimeStatus": "Normal",
+      "TotalDowntimeDuration": null,
+      "ServiceName": "CS_TEST_POU2",
+      "DowntimeHrMin": null
     }
   ]
+ }
 }
