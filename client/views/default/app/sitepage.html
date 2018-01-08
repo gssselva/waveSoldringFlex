@@ -5,6 +5,17 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content class="has-header" data-comp-id="ionic-content.1">
+        <div data-comp-id="div.1"
+            style="background: url('images/bg.png') center/100% 100% no-repeat;">
+            <div class="row" data-comp-id="row.1">
+                <div class="col" data-comp-id="column.1"><img data-comp-id="image.1" data-img="" ng-src="images/default.png">
+                    <label class="item item-input" data-comp-id="textInput.1">
+                        <span class="input-label">Label</span>
+                        <input type="text">
+                    </label>
+                </div>
+            </div>
+        </div>
         <div class="item item-icon-right" data-comp-id="item.1"
             ng-click="app.call('wavesoldering_methods.getCompanyByCode', item)"
             ng-repeat="item in data.sitelist">
@@ -16,11 +27,11 @@
         </div>
     </ion-content>
     <ion-footer-bar data-comp-id="footer-bar.1" dynamic-fixed-footer="">
-        <div class="row" data-comp-id="row.1">
+        <div class="row" data-comp-id="row.2">
             <div class="col" data-comp-id="column.2">
                 <button class="button button-block" data-comp-id="button.1">Cancel</button>
             </div>
-            <div class="col" data-comp-id="column.1">
+            <div class="col" data-comp-id="column.3">
                 <button class="button button-block" data-comp-id="button.2">Set as Default</button>
             </div>
         </div>
