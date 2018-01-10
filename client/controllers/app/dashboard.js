@@ -4,7 +4,7 @@ function app_dashboard($scope, app) {
     app.init($scope);
     $scope.getDetails = function (data,companyCode) {
      
-    var parameter = {'selectedItem': data, 'companyCode': companyCode};
+    var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
     app.call('wavesoldering_methods.getDownTimeDetails', parameter);
     };
 }
