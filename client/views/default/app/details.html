@@ -1,0 +1,82 @@
+<ion-view data-comp-id="ionic-view.1">
+    <ion-nav-bar align-title="" class=" bar-positive" data-comp-id="nav-bar.1">
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-ios-arrow-left" data-comp-id="button.1"></button>
+        </ion-nav-buttons>
+        <ion-nav-title data-comp-id="nav-title.1">Notifications</ion-nav-title>
+        <ion-nav-buttons side="right"></ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content class=" stable-bg" data-comp-id="ionic-content.1">
+        <!--Time Span Title-->
+        <div data-comp-id="div.1">
+            <div class="row" data-comp-id="row.1" ng-repeat="item in data.groups">
+                <div class="col" data-comp-id="column.1">
+                    <div class="row" data-comp-id="row.2">
+                        <div class="col" data-comp-id="column.2">
+                            <div data-comp-id="text.1" ng-bind="item.name"
+                                style="color: rgb(153, 153, 153); font-size: 16px;">Today</div>
+                        </div>
+                    </div>
+                    <div class=" light-bg" data-comp-id="div.2"
+                        style="margin: 0%; border-bottom: 1px solid rgb(238, 238, 238);">
+                        <div class="row" data-comp-id="row.3"
+                            ng-click="app.action('notifications', 'data.groups[item].notifications[notification].action', this)"
+                            ng-repeat="notification in item.notifications"
+                            style="border-bottom: 1px solid rgb(238, 238, 238); padding: 4%;">
+                            <div class="col text-center col-20" data-comp-id="column.3">
+                                <i class="icon {{notification.icon}} positive" data-comp-id="icon.1"
+                                    style="font-size: 24px;"></i>
+                            </div>
+                            <div class="col" data-comp-id="column.4">
+                                <div data-comp-id="text.2" ng-bind="notification.title"
+                                    style="float: left; font-size: 16px; color: rgb(51, 51, 51);">Updates</div>
+                                <div data-comp-id="text.3" ng-bind="notification.loggedDuration"
+                                    style="float: left; font-size: 12px; color: rgb(153, 153, 153); font-weight: 300; margin: 0% 0% 0% 4%;">7m</div>
+                                <div data-comp-id="text.4"
+                                    style="float: left; font-size: 12px; color: rgb(153, 153, 153); font-weight: 300; margin: 0px 0px 0px 4px;">ago</div>
+                                <div class="row" data-comp-id="row.4" style="margin: 16% 0% 0%; padding: 0px;">
+                                    <div class="col" data-comp-id="column.5" style="margin: 0px; padding: 0px;">
+                                        <div data-comp-id="text.5"
+                                            style="color: rgb(102, 102, 102); font-weight: 300; font-size: 16px;"></div>
+                                        <div data-comp-id="text.6" ng-bind="notification.description"
+                                            style="color: rgb(102, 102, 102); font-size: 16px;">Some text</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col text-center col-20" data-comp-id="column.6"
+                                style="padding: 2% 0% 0%;">
+                                <i class="icon ion-ios-close-empty" data-comp-id="icon.2"
+                                    ng-click="app.action('notifications', 'data.groups[item].notifications[notification].close', this)"
+                                    style="font-size: 24px; color: rgb(255, 59, 48);"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Time Span Title-->
+        <!--Notification-->
+        <!--Notification-->
+        <!--Time Span Title-->
+        <!--Notification-->
+        <!--Notification-->
+    </ion-content>
+    <div class="footer-button-bar" data-comp-id="footer-bar-buttons.1"
+        dynamic-floating-footer="">
+        <div class="row" data-comp-id="row.5" style="padding: 0px;">
+            <div class="col" data-comp-id="column.7" style="padding: 0px;"></div>
+            <div class="col text-center" data-comp-id="column.8" style="padding: 0px;">
+                <div class="footer-button" data-comp-id="footerButton.1">
+                    <button
+                        class="button icon button-shadowed ion-ios-close-empty button-round button-assertive"
+                        style="color: rgb(255, 255, 255); border-color: rgba(255, 255, 255, 0);"></button>
+                    <div class="label"></div>
+                </div>
+                <div data-comp-id="text.7" style="color: rgb(51, 51, 51);">Clear All</div>
+            </div>
+            <div class="col text-right" data-comp-id="column.9" style="padding: 0px;"></div>
+        </div>
+    </div>
+    <div class="footer-button-bar" data-comp-id="footer-bar-buttons.2"
+        dynamic-floating-footer=""></div>
+</ion-view>
