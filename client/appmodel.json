@@ -94,5 +94,18 @@
         }
       }
     }
+  },
+  "details": {
+    "type": "object",
+    "comment": "",
+    "properties": {
+      "details_list": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    }
   }
 }
