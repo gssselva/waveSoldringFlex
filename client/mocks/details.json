@@ -1,1 +1,34 @@
-{}
+{
+  "ServicesIdCode": "CS_TEST_POU2",
+  "ServicesIdDescription": "CS_TEST_POU2",
+  "CurrentDate": "1/10/2018",
+  "DowntimeDeatils": [
+    {
+      "ReasonCode": "M01",
+      "ReasonDescription": "Incomplete KIT",
+      "DtStartTime": "2018-01-10T00:00:00",
+      "DtEndTime": "2018-01-10T00:01:00",
+      "DtDuration": "00:01:00:000",
+      "Comments": "test",
+      "ReportedUser": "Leelavathi Karuppiah"
+    },
+    {
+      "ReasonCode": "ZZZ",
+      "ReasonDescription": "Time lost by inefficient proc",
+      "DtStartTime": "2018-01-10T00:21:53.033",
+      "DtEndTime": "2018-01-10T02:17:26.727",
+      "DtDuration": "01:55:33:000",
+      "Comments": "test",
+      "ReportedUser": "Leelavathi Karuppiah"
+    },
+    {
+      "ReasonCode": "O02",
+      "ReasonDescription": "Manpower shortage",
+      "DtStartTime": "2018-01-10T00:18:00",
+      "DtEndTime": "2018-01-10T00:19:00",
+      "DtDuration": "00:01:00:000",
+      "Comments": "checking retroactive event for  XML ",
+      "ReportedUser": "Leelavathi Karuppiah"
+    }
+  ]
+}
