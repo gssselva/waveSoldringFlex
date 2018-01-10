@@ -42,13 +42,6 @@
       "sourceScreenId": "app.listview.listviewcool",
       "sourceAppId": "universaltemplates",
       "model": "dashboard"
-    },
-    {
-      "id": "details",
-      "name": "details",
-      "sourceScreenId": "app.notifications.notificationscool",
-      "sourceAppId": "universaltemplates",
-      "model": "details"
     }
   ],
   "sourceAppId": "_blank",
