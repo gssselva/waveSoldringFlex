@@ -22,53 +22,54 @@
                     <i class="icon ion-search placeholder-icon">Search</i>
                     <input placeholder="Search" type="search">
                 </label>
-            </div>
-        </div>
-        <div data-comp-id="div.1" ng-repeat="item in data.details_list.DowntimeDeatils">
-            <div class="row" data-comp-id="row.3">
-                <div class="col col-33" data-comp-id="column.3">
-                    <div data-comp-id="text.2">Reason Code :</div>
-                </div>
-                <div class="col" data-comp-id="column.4">
-                    <div data-comp-id="text.3" ng-bind="item.ReasonCode">Sample 11</div>
-                </div>
-            </div>
-            <div class="row" data-comp-id="row.6">
-                <div class="col col-33" data-comp-id="column.11">
-                    <div data-comp-id="text.4">Description :</div>
-                </div>
-                <div class="col" data-comp-id="column.10">
-                    <div data-comp-id="text.9" ng-bind="item.ReasonDescription">Some text</div>
-                </div>
-            </div>
-            <div class="row" data-comp-id="row.4">
-                <div class="col col-25" data-comp-id="column.5">
-                    <div data-comp-id="text.5">Start</div>
-                    <label class="item" data-comp-id="timeInput.1" style="padding:0;">
-                        <input ng-model="item.DtStartTime" time-format="HH:mm" type="time">
-                    </label>
-                </div>
-                <div class="col col-25" data-comp-id="column.6">
-                    <div data-comp-id="text.6">Stop</div>
-                    <label class="item" data-comp-id="timeInput.2" style="padding:0;">
-                        <input ng-model="item.DtEndTime" time-format="HH:mm" type="time">
-                    </label>
-                </div>
-                <div class="col col-25" data-comp-id="column.7">
-                    <div data-comp-id="text.7">Duration</div>
-                    <label class="item" data-comp-id="timeInput.3" style="padding:0;">
-                        <input ng-model="item.DtDuration" time-format="HH:mm" type="time">
-                    </label>
-                </div>
-                <div class="col col-25 text-center" data-comp-id="column.8"
-                    style="padding: 30px 0px 0px;">
-                    <i class="icon fa-icon fa-commenting" data-comp-id="icon.2"
-                        ng-click="commentsDisplay()" style="font-size: 32px;"></i>
-                </div>
-            </div>
-            <div class="row" data-comp-id="row.5">
-                <div class="col" data-comp-id="column.9">
-                    <div data-comp-id="text.8" ng-bind="item.Comments">Some text</div>
+                <div class="card" data-comp-display="card.1" data-comp-id="div.1"
+                    ng-repeat="item in data.details_list.DowntimeDeatils">
+                    <div class="row" data-comp-id="row.3" style="padding: 0px;">
+                        <div class="col col-33" data-comp-id="column.3">
+                            <div data-comp-id="text.2">Reason Code :</div>
+                        </div>
+                        <div class="col" data-comp-id="column.4">
+                            <div data-comp-id="text.3" ng-bind="item.ReasonCode">Sample 11</div>
+                        </div>
+                    </div>
+                    <div class="row" data-comp-id="row.4">
+                        <div class="col col-33" data-comp-id="column.5">
+                            <div data-comp-id="text.4">Description :</div>
+                        </div>
+                        <div class="col" data-comp-id="column.6">
+                            <div data-comp-id="text.5" ng-bind="item.ReasonDescription">Some text</div>
+                        </div>
+                    </div>
+                    <div class="row" data-comp-id="row.5">
+                        <div class="col col-25" data-comp-id="column.7">
+                            <div data-comp-id="text.6">Start</div>
+                            <label class="item" data-comp-id="timeInput.1" style="padding:0;">
+                                <input ng-model="item.DtStartTime" time-format="HH:mm" type="time">
+                            </label>
+                        </div>
+                        <div class="col col-25" data-comp-id="column.8">
+                            <div data-comp-id="text.7">Stop</div>
+                            <label class="item" data-comp-id="timeInput.2" style="padding:0;">
+                                <input ng-model="item.DtEndTime" time-format="HH:mm" type="time">
+                            </label>
+                        </div>
+                        <div class="col col-25" data-comp-id="column.9">
+                            <div data-comp-id="text.8">Duration</div>
+                            <label class="item" data-comp-id="timeInput.3" style="padding:0;">
+                                <input ng-model="item.DtDuration" time-format="HH:mm" type="time">
+                            </label>
+                        </div>
+                        <div class="col col-25 text-center" data-comp-id="column.10"
+                            style="padding: 30px 0px 0px;">
+                            <i class="icon fa-icon fa-commenting" data-comp-id="icon.2"
+                                ng-click="commentsDisplay()" style="font-size: 32px;"></i>
+                        </div>
+                    </div>
+                    <div class="row" data-comp-id="row.6">
+                        <div class="col" data-comp-id="column.11">
+                            <div data-comp-id="text.9" ng-bind="item.Comments">Some text</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
