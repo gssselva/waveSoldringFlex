@@ -13,7 +13,7 @@
         <div data-comp-id="div.1"
             style="background: url('images/bg.png') center/100% 100%">
             <div class="row" data-comp-id="row.1">
-                <div class="col" data-comp-id="column.1">
+                <div class="col col-33" data-comp-id="column.1">
                     <div class=" text-right" data-comp-id="text.1"
                         ng-bind="data.dashboard_list.CompanyCode"
                         style="color: rgb(26, 146, 204); font-size: 14px;">code - company name</div>
@@ -68,7 +68,8 @@
             <div class="row" data-comp-id="row.6"
                 ng-click="getDetails(item,data.dashboard_list.CompanyCode)">
                 <div class="col" data-comp-id="column.10">
-                    <div data-comp-id="text.11" ng-bind="item.ServiceName">Some text</div>
+                    <div data-comp-id="text.11" ng-bind="item.ServiceName"
+                        style="font-weight: bold;">Some text</div>
                     <div class="row" data-comp-id="row.7">
                         <div class="col col-33" data-comp-id="column.11">
                             <div class=" stable-bg" data-comp-id="div.3" style="border-radius: 8px;">
@@ -92,7 +93,7 @@
                             </div>
                         </div>
                         <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
-                            style="font-size: 20px;"></i>
+                            style="font-size: 40px;"></i>
                     </div>
                     <ion-list data-comp-id="ionic-list.1">
                         <div class="item item-icon-right" data-comp-id="item.1"
