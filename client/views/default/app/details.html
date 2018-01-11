@@ -8,59 +8,59 @@
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
     <ion-content data-comp-id="ionic-content.1">
-        <div class="row" data-comp-id="row.5">
-            <div class="col" data-comp-id="column.9">
+        <div class="row" data-comp-id="row.1">
+            <div class="col" data-comp-id="column.1">
                 <div data-comp-id="text.1">
                     <i class="icon fa-icon fa-circle" data-comp-id="icon.1"
                         style="color: rgb(13, 207, 118);"></i>Some text</div>
             </div>
         </div>
-        <div class="row" data-comp-id="row.1" style="padding: 0px;">
-            <div class="col" data-comp-id="column.1" style="padding: 0px;">
+        <div class="row" data-comp-id="row.2" style="padding: 0px;">
+            <div class="col" data-comp-id="column.2" style="padding: 0px;">
                 <label class="item item-input light-border" data-comp-id="textInput.1">
-                    <span class="input-label">Search</span>
-                    <input type="text">
+                    <i class="icon ion-search placeholder-icon">Search</i>
+                    <input placeholder="Search" type="search">
                 </label>
             </div>
         </div>
         <div data-comp-id="div.1" ng-repeat="item in data.details_list.DowntimeDeatils">
-            <div class="row" data-comp-id="row.2">
-                <div class="col col-33" data-comp-id="column.2">
+            <div class="row" data-comp-id="row.3">
+                <div class="col col-33" data-comp-id="column.3">
                     <div data-comp-id="text.2">Reason Code :</div>
                 </div>
-                <div class="col" data-comp-id="column.3">
+                <div class="col" data-comp-id="column.4">
                     <div data-comp-id="text.3" ng-bind="item.ReasonCode">Sample 11</div>
                 </div>
             </div>
             <div data-comp-id="text.4">Description :</div>
-            <div class="row" data-comp-id="row.3">
-                <div class="col col-25" data-comp-id="column.4">
+            <div class="row" data-comp-id="row.4">
+                <div class="col col-25" data-comp-id="column.5">
                     <div data-comp-id="text.5">Start</div>
                     <label class="item" data-comp-id="timeInput.1" style="padding:0;">
                         <input ng-model="item.DtStartTime" time-format="HH:mm" type="time">
                     </label>
                 </div>
-                <div class="col col-25" data-comp-id="column.5">
+                <div class="col col-25" data-comp-id="column.6">
                     <div data-comp-id="text.6">Stop</div>
                     <label class="item" data-comp-id="timeInput.2" style="padding:0;">
                         <input ng-model="item.DtEndTime" time-format="HH:mm" type="time">
                     </label>
                 </div>
-                <div class="col col-25" data-comp-id="column.6">
+                <div class="col col-25" data-comp-id="column.7">
                     <div data-comp-id="text.7">Duration</div>
                     <label class="item" data-comp-id="timeInput.3" style="padding:0;">
                         <input ng-model="item.DtDuration" time-format="HH:mm" type="time">
                     </label>
                 </div>
-                <div class="col col-25 text-center" data-comp-id="column.7"
+                <div class="col col-25 text-center" data-comp-id="column.8"
                     style="padding: 30px 0px 0px;">
                     <i class="icon fa-icon fa-commenting" data-comp-id="icon.2"
-                        style="font-size: 32px;"></i>
+                        ng-click="commentsDisplay()" style="font-size: 32px;"></i>
                 </div>
             </div>
-            <div class="row" data-comp-id="row.4">
-                <div class="col" data-comp-id="column.8">
-                    <div data-comp-id="text.8">Some text</div>
+            <div class="row" data-comp-id="row.5">
+                <div class="col" data-comp-id="column.9">
+                    <div data-comp-id="text.8" ng-bind="item.Comments">Some text</div>
                 </div>
             </div>
         </div>
