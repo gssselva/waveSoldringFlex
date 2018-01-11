@@ -21,8 +21,7 @@
             </div>
         </div>
         <div class="item item-icon-right" data-comp-id="item.1"
-            ng-click="app.call('wavesoldering_methods.getCompanyByCode', item)"
-            ng-repeat="item in data.sitelist">
+            ng-click="preferedSite(item)" ng-repeat="item in data.sitelist">
             <div data-comp-id="text.3" ng-bind="item.Company">
                 Some text
                 <span class="item-note"></span>
