@@ -89,13 +89,26 @@
                         <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
                             style="font-size: 40px;"></i>
                     </div>
-                    <div class="row" data-comp-id="row.8">
-                        <div class="col calm-border" data-comp-id="column.13">
+                    <div class="row" data-comp-id="row.8"
+                        ng-if="item.CurrentDowntimeStatus != &quot;Downtime&quot;">
+                        <div class="col" data-comp-id="column.13">
                             <div class=" text-center" data-comp-id="text.16" style="font-size: 16px;">Current Status</div>
                         </div>
-                        <div class="col calm-border" data-comp-id="column.14">
+                        <div class="col" data-comp-id="column.14">
                             <div class=" text-center" data-comp-id="text.17"
                                 ng-bind="item.CurrentDowntimeStatus" style="font-size: 13px;color:#588E6E">Some text</div>
+                        </div>
+                    </div>
+                    <div class="row" data-comp-id="row.9"
+                        ng-if="item.CurrentDowntimeStatus == &quot;Downtime&quot;">
+                        <div class="col" data-comp-id="column.15">
+                            <div class=" text-center" data-comp-id="text.18">Current Downtime</div>
+                        </div>
+                        <div class="col" data-comp-id="column.16">
+                            <label class="item item-stacked-label item-outside-label"
+                                data-comp-id="timeInput.1" style="padding:0px">
+                                <input ng-model="item.DowntimeHrMin" time-format="HH:mm" type="time">
+                            </label>
                         </div>
                     </div>
                 </div>
