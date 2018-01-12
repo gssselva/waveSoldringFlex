@@ -58,11 +58,12 @@
             ng-repeat="item in data.dashboard_list.ServicesPou">
             <div class="row stable-bg" data-comp-id="row.5">
                 <div class="col" data-comp-id="column.8">
-                    <div data-comp-id="text.10" ng-bind="item.BuildingName" style="font-size: 12px;">Some text</div>
+                    <div data-comp-id="text.10" ng-bind="item.BuildingName" style="font-size: 15px;">Some text</div>
                 </div>
-                <div class="col" data-comp-id="column.9">
-                    <ion-toggle class="toggle-item" data-comp-id="toggle.1"
-                        ng-model="item.IsStopped" style="" toggle-class=""></ion-toggle>
+                <div class="col col-33" data-comp-id="column.9"
+                    style="padding: 0px; margin: 0px;">
+                    <ion-toggle class="toggle-item stable-bg" data-comp-id="toggle.1"
+                        ng-model="item.IsStopped" style="margin: 0px;padding: 0px;" toggle-class=""></ion-toggle>
                 </div>
             </div>
             <div class="row" data-comp-id="row.6"
@@ -71,35 +72,32 @@
                     <div data-comp-id="text.11" ng-bind="item.ServiceName"
                         style="font-weight: bold;">Some text</div>
                     <div class="row" data-comp-id="row.7">
-                        <div class="col col-33" data-comp-id="column.11">
+                        <div class="col col-50" data-comp-id="column.11">
                             <div class=" stable-bg" data-comp-id="div.3" style="border-radius: 8px;">
                                 <div class=" text-center" data-comp-id="text.12"
                                     ng-bind="item.DowntimeEventCount" style="color: rgb(26, 146, 204);">Some text</div>
-                                <div data-comp-id="text.13" style="font-size: 11px;">Downtime Events</div>
+                                <div class=" text-center" data-comp-id="text.13" style="font-size: 11px;">Downtime Events</div>
                             </div>
                         </div>
-                        <div class="col" data-comp-id="column.12">
+                        <div class="col col-50" data-comp-id="column.12">
                             <div class=" stable-bg" data-comp-id="div.4" style="border-radius: 8px;">
                                 <div class=" text-center" data-comp-id="text.14"
                                     ng-bind="item.ScannedEventCount" style="color: rgb(26, 146, 204);">Some text</div>
                                 <div class=" text-center" data-comp-id="text.15" style="font-size: 11px;">Pallet QTY</div>
                             </div>
                         </div>
-                        <div class="col" data-comp-id="column.13">
-                            <div data-comp-id="div.5">
-                                <div data-comp-id="text.16" style="font-size: 13px;">Current Status</div>
-                                <div class=" text-center" data-comp-id="text.17"
-                                    ng-bind="item.CurrentDowntimeStatus" style="font-size: 13px;">Some text</div>
-                            </div>
-                        </div>
                         <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
                             style="font-size: 40px;"></i>
                     </div>
-                    <ion-list data-comp-id="ionic-list.1">
-                        <div class="item item-icon-right" data-comp-id="item.1"
-                            ng-click="app.action('listview', 'data.dashboard_list[item].action', this)"
-                            style="border-top: 1px solid rgba(255, 255, 255, 0);"></div>
-                    </ion-list>
+                    <div class="row" data-comp-id="row.8">
+                        <div class="col" data-comp-id="column.14">
+                            <div data-comp-id="text.16" style="font-size: 13px;">Current Status</div>
+                        </div>
+                        <div class="col" data-comp-id="column.15">
+                            <div class=" text-center" data-comp-id="text.17"
+                                ng-bind="item.CurrentDowntimeStatus" style="font-size: 13px;">Some text</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
