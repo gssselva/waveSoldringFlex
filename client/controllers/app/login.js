@@ -1,5 +1,5 @@
 angular.module('app').controller('app_login', app_login);
-function app_login($scope, app, $q,data) {
+function app_login($scope, app, $q) {
     'use strict';
     //console.log('data objects -->', $scope.data);
     app.init($scope);
