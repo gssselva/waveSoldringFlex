@@ -1,5 +1,5 @@
 angular.module('app').controller('app_login', app_login);
-function app_login($scope, app, $q,$localStorage) {
+function app_login($scope, app, $q) {
     'use strict';
     
     app.init($scope,function(data){
@@ -45,7 +45,7 @@ function app_login($scope, app, $q,$localStorage) {
     $scope.login = function () {
     var credentials = {"UserName":$scope.data.username,
              "PassWord":$scope.data.password};
-             $localStorage.UserName = $scope.data.username;
+            //  $localStorage.UserName = $scope.data.username;
     app.call('login.login', credentials);
     };
     $scope.doLogin = function (credentials, useWebsocket) {
