@@ -8,7 +8,7 @@ function app_sitepage($scope, app) {
         selectedCompany = item;
     }
     $scope.defaultSite = function(){
-        app.call('wavesoldering_methods.getCompanyByCode', selectedCompany.CompanyCode);
+        //app.call('wavesoldering_methods.getCompanyByCode', selectedCompany.CompanyCode);
         
     }
 }
