@@ -3,6 +3,7 @@ function app_dashboard($scope, app) {
     'use strict';
     app.init($scope,function(){
         //app.call('wavesoldering_methods.getCompanyByCode', parameter);
+        console.log('data in login-->', $scope.data);
      console.log("in dash init");
     });
   
