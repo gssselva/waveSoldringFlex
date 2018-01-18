@@ -7,13 +7,13 @@ function app_sitepage($scope, app) {
     });
     var selectedCompany;
     
-    $scope.searchstring = '';
+    $scope.searchInputString = '';
     $scope.customSearch = function (item) {
-        if (!$scope.searchstring) {
+        if (!$scope.searchInputString) {
             return true;
         }
         var matched = true;
-        $scope.searchstring.split(' ').forEach(function (token) {
+        $scope.searchInputString.split(' ').forEach(function (token) {
             matched = matched && match(item, escapeRegExp(token));
         });
         return matched;
