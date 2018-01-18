@@ -17,14 +17,18 @@
                     </div>
                     <label class="item item-input" data-comp-id="textInput.1"
                         style="border-radius: 8px; width: 80%; margin: 10px 35px 0px; background-color: rgb(81, 64, 64); opacity: 0.5;">
-                        <input class="placeholder-light light" placeholder="Search" style="height:25px"
-                            type="text">
+                        <!--<input class="placeholder-light light" placeholder="Search" style="height:25px"-->
+                        <!--    type="text">-->
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                        <input data-comp-id="searchInput.1" ng-model="searchstring" placeholder="Search"
+                            style="height:25px" type="search">
                     </label>
                 </div>
             </div>
         </div>
         <div class="item item-icon-right" data-comp-id="item.1"
-            ng-click="preferedSite(item)" ng-repeat="item in data.sitelist">
+            ng-click="preferedSite(item)"
+            ng-repeat="item in data.sitelist | filter:customSearch">
             <div data-comp-id="text.3" ng-bind="item.Company">
                 Some text
                 <span class="item-note"></span>

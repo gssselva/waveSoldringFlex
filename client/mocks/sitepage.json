@@ -1,1 +1,17 @@
-{}
+{
+    "sitelist": [
+    {
+        "CompanyCode":"2898",
+        "Company":"Flex (Wuzhong) Pvt Ltd",
+        "SiteId":1,
+        "IsDefaultCompany":false
+        
+    },
+    {
+        "CompanyCode":"2391",
+        "Company":"FLEX.INTERNATIONAL EUROPE B.V.",
+        "SiteId":2,
+        "IsDefaultCompany":false
+    }
+  ]
+}
