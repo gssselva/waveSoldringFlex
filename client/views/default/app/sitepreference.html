@@ -24,30 +24,10 @@
         </div>
         <!--Search box-->
         <div class="row stable-bg" data-comp-id="row.1" style="padding: 0px;">
-            <div class="col col-60" data-comp-id="column.1">
-                <label class="item  item-input item-select-icon positive-icon"
-                    data-comp-id="selectInput.1">
-                    <select ng-model="sortBy"
-                        style="border-color: rgb(0, 153, 0); font-size: 16px; margin: 2px;">
-                        <option ng-show="false" value="">Sort by</option>
-                        <option value="name">Name</option>
-                        <option value="price">Price</option>
-                    </select>
-                </label>
-            </div>
-            <div class="col col-20" data-comp-id="column.2" ng-if="!changeIc"><img data-comp-id="image.1" data-img="" ng-click="changeIcon()"
-                ng-src="images/sitepreference/SortUpGlyph_Active.png"
-                style="width: 36px; height: 36px; margin: 8px;"></div>
-            <div class="col col-20" data-comp-id="column.3" ng-if="changeIc">
-                <img data-comp-id="image.2" data-img="" ng-src="images/sitepreference/SortUpGlyph_Deactive.png"
-                    style="width: 36px; height: 36px; margin: 8px;"></div>
-            <div class="col col-20" data-comp-id="column.4" ng-if="changeIc">
-                <img data-comp-id="image.3" data-img="" ng-click="changeIcon()"
+            <div class="col col-20" data-comp-id="column.1" ng-if="changeIc">
+                <img data-comp-id="image.1" data-img="" ng-click="changeIcon()"
                     ng-src="images/sitepreference/SortDownGlyph_Active.png"
                     style="width: 36px; height: 36px; margin: 8px;"></div>
-            <div class="col col-20 " data-comp-id="column.5" ng-if="!changeIc"><img data-comp-id="image.4" data-img=""
-                ng-src="images/sitepreference/SortDownGlyph_Deactive.png"
-                style="width: 36px; height: 36px; margin: 8px;"></div>
         </div>
     </ion-header-bar>
     <ion-content data-comp-id="ionic-content.1">
@@ -55,20 +35,12 @@
             ng-repeat="item in data.products | orderBy:sortFunc:isDescending | filter:customSearch"
             style="border-bottom: 1px solid rgb(238, 238, 238); color: rgb(134, 134, 134); margin: 0px;">
             <div class="row" data-comp-id="row.2">
-                <div class="col col-33" data-comp-id="column.6" style="margin: 0% 0% 0% 2%;"><img data-comp-id="image.5" ng-src="{{item.image}}" style="width: 80px;"></div>
-                <div class="col" data-comp-id="column.7" style="margin: -5px 0px 0px -15px;">
+                <div class="col col-33" data-comp-id="column.2" style="margin: 0% 0% 0% 2%;"></div>
+                <div class="col" data-comp-id="column.3" style="margin: -5px 0px 0px -15px;">
                     <div class="row" data-comp-id="row.3">
-                        <div class="col" data-comp-id="column.8">
-                            <div data-comp-id="text.1" ng-bind="item.name"
+                        <div class="col" data-comp-id="column.4">
+                            <div data-comp-id="text.1" ng-bind="item.Company"
                                 style="white-space: normal; color: rgb(51, 51, 51); line-height: 18px; font-size: 16px;"></div>
-                        </div>
-                    </div>
-                    <div class="row" data-comp-id="row.4" style="margin: -10px 0px;">
-                        <div class="col" data-comp-id="column.9">
-                            <div data-comp-id="text.2" ng-if="item.price"
-                                style="font-size: 14px; color: rgb(161, 161, 161); margin: 0px 0px 0px 4px; float: left;">$</div>
-                            <div data-comp-id="text.3" ng-bind="item.price"
-                                style=" float: left; font-size: 14px; color: rgb(161, 161, 161); margin: 0px 0px 0px 4px;">123</div>
                         </div>
                     </div>
                 </div>
