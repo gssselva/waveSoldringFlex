@@ -7,7 +7,7 @@ function app_sitepage($scope, app) {
     });
     var selectedCompany;
     
-    $scope.searchInput;
+    $scope.searchInput ='';
     $scope.customSearch = function (item) {
         if (!$scope.searchInput) {
             return true;
