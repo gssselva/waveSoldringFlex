@@ -24,13 +24,13 @@ function app_sitepreference($scope, app) {
     }
     var match = function (item, val) {
         var regex = new RegExp(val, 'i');
-        return item.name.toLowerCase().search(regex) >= 0;
+        return item.Company.toLowerCase().search(regex) >= 0;
     };
-    $scope.sortFunc = function (item) {
-        if ($scope.sortBy == 'price') {
-            return parseFloat(item.price);
-        } else {
-            return item.name;
-        }
-    };
+    // $scope.sortFunc = function (item) {
+    //     if ($scope.sortBy == 'price') {
+    //         return parseFloat(item.price);
+    //     } else {
+    //         return item.name;
+    //     }
+    // };
 }
