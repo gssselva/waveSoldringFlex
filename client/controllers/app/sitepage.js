@@ -3,7 +3,7 @@ function app_sitepage($scope, app) {
     'use strict';
     app.init($scope,function(data){
         //app.call('wavesoldering_methods.getCompanyByCode', parameter);
-     console.log("in site init-->"+data);
+     //console.log("in site init-->"+data);
     });
     var selectedCompany;
     
