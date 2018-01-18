@@ -6,6 +6,7 @@ function app_sitepage($scope, app) {
      console.log("in site init-->"+data);
     });
     var selectedCompany;
+    
     $scope.searchstring = '';
     $scope.customSearch = function (item) {
         if (!$scope.searchstring) {
