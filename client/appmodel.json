@@ -119,6 +119,9 @@
             }
           }
         }
+      },
+      "searchDeatils": {
+        "type": "string"
       }
     }
   },
