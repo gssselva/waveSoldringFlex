@@ -5,7 +5,10 @@ function app_dashboard($scope, app) {
         
         console.log('data in dashboard-->', $scope.data);
     });
-  
+    $scope.sitePreference=function(){
+      var adid ='gssselva';//need to replace static value with localstorage value.
+      app.call('wavesoldering_methods.sitePreference', adid);
+    };
     $scope.getDetails = function (data,companyCode) {
      
     var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
