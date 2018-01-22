@@ -5,6 +5,10 @@ function app_details($scope, app) {
     $scope.commentsDisplay = function(){
         console.log("comments clicked...");
     }
+    $scope.goBack = function(){
+        var companyCode ="2391";//need to replace static value with localstorage value.
+        app.call('wavesoldering_methods.getCompanyByCode', companyCode);
+    }
     $scope.data.searchDeatils ='';
     $scope.customDetailsSearch = function (item) {
         if (!$scope.data.searchDeatils) {

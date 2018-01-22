@@ -2,8 +2,8 @@ angular.module('app').controller('app_sitepage', app_sitepage);
 function app_sitepage($scope, app) {
     'use strict';
     app.init($scope,function(data){
-        var adid ='gssselva';//need to replace static value with localstorage value.
-    app.call('wavesoldering_methods.sitePreference', adid);
+    //     var adid ='gssselva';//need to replace static value with localstorage value.
+    // app.call('wavesoldering_methods.sitePreference', adid);
      //console.log("in site init-->"+data);
     });
     var selectedCompany;
