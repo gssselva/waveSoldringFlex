@@ -45,7 +45,7 @@ function app_login($scope, app, $q) {
     $scope.login = function () {
     var credentials = {"UserName":$scope.data.username,
              "PassWord":$scope.data.password};
-            //  $localStorage.UserName = $scope.data.username;
+            $localStorage.UserName = $scope.data.username;
     app.call('login.login', credentials);
     };
     $scope.doLogin = function (credentials, useWebsocket) {
