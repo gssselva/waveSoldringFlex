@@ -1,4 +1,4 @@
-angular.module('app',["ngStorage"]).controller('app_login', app_login);
+angular.module('app').controller('app_login', app_login);
 function app_login($scope, app, $q,$localStorage) {
     'use strict';
     
