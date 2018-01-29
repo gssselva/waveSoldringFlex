@@ -30,7 +30,20 @@ function app_sitepage($scope, app,$ionicPopup) {
     $scope.preferedSite = function(item){
         //app.call('wavesoldering_methods.getCompanyByCode', item.CompanyCode);
         selectedCompany = item;
-        $scope.$ionicPopup.show("sample--");
+        //$scope.showConfirm = function() {
+            var confirmPopup = $ionicPopup.confirm({
+                 title: 'Title',
+                 template: 'Are you sure?'
+                 });
+                 
+         confirmPopup.then(function(res) {
+            if(res) {
+                 console.log('Sure!');
+                } else {
+                    console.log('Not sure!');
+                }
+            });
+        //};
     }
     $scope.defaultSite = function(){
         //app.call('wavesoldering_methods.getCompanyByCode', selectedCompany.CompanyCode);
