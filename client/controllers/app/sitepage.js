@@ -30,7 +30,7 @@ function app_sitepage($scope, app,$ionicPopup) {
     $scope.preferedSite = function(item){
         //app.call('wavesoldering_methods.getCompanyByCode', item.CompanyCode);
         selectedCompany = item;
-        $scope.showPopup("sample--");
+        $scope.$ionicPopup.show("sample--");
     }
     $scope.defaultSite = function(){
         //app.call('wavesoldering_methods.getCompanyByCode', selectedCompany.CompanyCode);
