@@ -1,5 +1,5 @@
 angular.module('app').controller('app_sitepage', app_sitepage);
-function app_sitepage($scope, app,$ionicloading) {
+function app_sitepage($scope, app,$ionicPopup) {
     'use strict';
     app.init($scope,function(data){
     //     var adid ='gssselva';//need to replace static value with localstorage value.
@@ -30,7 +30,7 @@ function app_sitepage($scope, app,$ionicloading) {
     $scope.preferedSite = function(item){
         //app.call('wavesoldering_methods.getCompanyByCode', item.CompanyCode);
         selectedCompany = item;
-        $scope.app.showLoading("sample--");
+        $scope.showPopup("sample--");
     }
     $scope.defaultSite = function(){
         //app.call('wavesoldering_methods.getCompanyByCode', selectedCompany.CompanyCode);
