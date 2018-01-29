@@ -1,4 +1,4 @@
-angular.module('app',['ngStorage']).controller('app', app);
+angular.module('app',[]).controller('app', app);
 function app($scope, app) {
     'use strict';
 }
