@@ -3,7 +3,7 @@ function app_login($scope, app, $q) {
     'use strict';
     
     app.init($scope,function(data){
-    console.log('data objects in login -->', $scope.data);    
+    console.log('data objects in login -->', $scope.data.loginresponse);    
     if (!$scope.data) {
         $scope.data = {};
         
