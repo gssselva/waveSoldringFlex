@@ -40,6 +40,13 @@
             "type": "string"
           }
         }
+      },
+      "loginresponse": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {}
+        }
       }
     }
   },
