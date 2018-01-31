@@ -110,13 +110,25 @@
                     <div class="row" data-comp-id="row.9"
                         ng-if="item.CurrentDowntimeStatus == &quot;Downtime&quot;">
                         <div class="col" data-comp-id="column.16">
-                            <div class=" text-center" data-comp-id="text.20">Current Downtime</div>
+                            <div class=" text-center" data-comp-id="text.20" style="font-size: 13px;">Current Downtime</div>
                         </div>
                         <div class="col" data-comp-id="column.17">
                             <label class="item item-stacked-label item-outside-label"
                                 data-comp-id="timeInput.1" style="padding:0px">
                                 <input ng-model="item.DowntimeHrMin" time-format="HH:mm" type="time">
                             </label>
+                        </div>
+                    </div>
+                    <div class="row" data-comp-id="row.10" ng-if="item.TotalDowntimeDuration">
+                        <div class="col col-50" data-comp-id="column.18">
+                            <div data-comp-id="text.21" style="font-size: 13px;">Total Downtime Duration</div>
+                        </div>
+                        <div class="col" data-comp-id="column.19">
+                            <div data-comp-id="text.22" ng-bind="item.TotalDowntimeDuration"
+                                style="font-size: 13px;">Some text</div>
+                        </div>
+                        <div class="col" data-comp-id="column.20">
+                            <div data-comp-id="text.23" style="font-size: 13px;">(HH:MM)</div>
                         </div>
                     </div>
                 </div>

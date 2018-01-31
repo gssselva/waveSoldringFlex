@@ -27,7 +27,7 @@
       "DowntimeEventCount": 1,
       "ScannedEventCount": 0,
       "CurrentDowntimeStatus": "Normal",
-      "TotalDowntimeDuration": null,
+      "TotalDowntimeDuration": "09:40:52:000",
       "ServiceName": "CS_TEST_POU2",
       "DowntimeHrMin": null
     }
