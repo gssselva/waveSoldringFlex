@@ -58,17 +58,17 @@
         <div class="card" data-comp-display="card.1" data-comp-id="div.2"
             ng-repeat="item in data.dashboard_list.ServicesPou">
             <div class="row stable-bg" data-comp-id="row.5">
-                <div class="col col-75" data-comp-id="column.8">
+                <div class="col col-50" data-comp-id="column.8">
                     <div data-comp-id="text.10" ng-bind="item.BuildingName" style="font-size: 15px;">Some text</div>
                 </div>
-                <div class="col col-25" data-comp-id="column.9"
+                <div class="col col-25" data-comp-id="column.9" ng-if="item.IsStopped==true"
                     style="padding: 5px 0px 0px; margin: 0px;">
                     <div data-comp-id="text.11">
                         <i class="icon fa-icon fa-circle" data-comp-id="icon.1"
                             style="color: rgb(12, 174, 99); padding: 5px;"></i>ON</div>
                 </div>
                 <div class="col col-25" data-comp-id="column.10"
-                    ng-if="item.IsStopped == &quot;true&quot;" style="padding: 20px 0px 0px;">
+                    ng-if="item.IsStopped == false;" style="padding: 20px 0px 0px;">
                     <div data-comp-id="text.12">
                         <i class="icon fa-icon fa-circle dark" data-comp-id="icon.2"
                             style="padding: 5px;"></i>OFF</div>
