@@ -42,7 +42,7 @@ function app_sitepage($scope, app,$ionicPopup) {
                  var adid = "gssselva";//hardcoded need to replace with localstorage value.
                  var parameters ={"adid":adid,
                     "CompanyCode":selectedCompany.CompanyCode};
-                     app.call('wavesoldering_methods.setPreferedSite', parameters);
+                     app.call('site_prefered.setPreferedSite', parameters);
                 } else {
                     console.log('Not sure!');
                 }
