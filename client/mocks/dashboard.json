@@ -23,7 +23,7 @@
       "BuildingCode": "CST_WS_B2",
       "BuildingName": "Wave Soldering Test Building",
       "ServiceCode": "CS_TEST_POU2",
-      "IsStopped": true,
+      "IsStopped": false,
       "DowntimeEventCount": 1,
       "ScannedEventCount": 0,
       "CurrentDowntimeStatus": "Normal",

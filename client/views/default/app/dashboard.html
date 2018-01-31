@@ -58,54 +58,61 @@
         <div class="card" data-comp-display="card.1" data-comp-id="div.2"
             ng-repeat="item in data.dashboard_list.ServicesPou">
             <div class="row stable-bg" data-comp-id="row.5">
-                <div class="col" data-comp-id="column.8">
+                <div class="col col-75" data-comp-id="column.8">
                     <div data-comp-id="text.10" ng-bind="item.BuildingName" style="font-size: 15px;">Some text</div>
                 </div>
-                <div class="col col-33" data-comp-id="column.9"
-                    style="padding: 0px; margin: 0px;">
-                    <ion-toggle class="toggle-item stable-bg" data-comp-id="toggle.1"
-                        ng-model="item.IsStopped" style="margin: 0px;padding: 0px;" toggle-class=""></ion-toggle>
+                <div class="col col-25" data-comp-id="column.9"
+                    style="padding: 20px 0px 0px; margin: 0px;">
+                    <div data-comp-id="text.11">
+                        <i class="icon fa-icon fa-circle" data-comp-id="icon.1"
+                            style="color: rgb(12, 174, 99); padding: 5px;"></i>ON</div>
+                </div>
+                <div class="col col-25" data-comp-id="column.10"
+                    ng-if="item.IsStopped == &quot;true&quot;" style="padding: 20px 0px 0px;">
+                    <div data-comp-id="text.12">
+                        <i class="icon fa-icon fa-circle dark" data-comp-id="icon.2"
+                            style="padding: 5px;"></i>OFF</div>
                 </div>
             </div>
             <div class="row" data-comp-id="row.6"
                 ng-click="getDetails(item,data.dashboard_list.CompanyCode)">
-                <div class="col" data-comp-id="column.10">
-                    <div data-comp-id="text.11" ng-bind="item.ServiceName"
+                <div class="col" data-comp-id="column.11">
+                    <div data-comp-id="text.13" ng-bind="item.ServiceName"
                         style="font-weight: bold;">Some text</div>
                     <div class="row" data-comp-id="row.7">
-                        <div class="col col-50" data-comp-id="column.11">
-                            <div class=" stable-bg" data-comp-id="div.3" style="border-radius: 8px;">
-                                <div class=" text-center" data-comp-id="text.12"
-                                    ng-bind="item.DowntimeEventCount" style="color: rgb(26, 146, 204);">Some text</div>
-                                <div class=" text-center" data-comp-id="text.13" style="font-size: 11px;">Downtime Events</div>
-                            </div>
-                        </div>
                         <div class="col col-50" data-comp-id="column.12">
-                            <div class=" stable-bg" data-comp-id="div.4" style="border-radius: 8px;">
+                            <div class=" stable-bg" data-comp-id="div.3" style="border-radius: 8px;">
                                 <div class=" text-center" data-comp-id="text.14"
-                                    ng-bind="item.ScannedEventCount" style="color: rgb(26, 146, 204);">Some text</div>
-                                <div class=" text-center" data-comp-id="text.15" style="font-size: 11px;">Pallet QTY</div>
+                                    ng-bind="item.DowntimeEventCount" style="color: rgb(26, 146, 204);">Some text</div>
+                                <div class=" text-center" data-comp-id="text.15" style="font-size: 11px;">Downtime Events</div>
                             </div>
                         </div>
-                        <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.1"
+                        <div class="col col-50" data-comp-id="column.13">
+                            <div class=" stable-bg" data-comp-id="div.4" style="border-radius: 8px;">
+                                <div class=" text-center" data-comp-id="text.16"
+                                    ng-bind="item.ScannedEventCount" style="color: rgb(26, 146, 204);">Some text</div>
+                                <div class=" text-center" data-comp-id="text.17" style="font-size: 11px;">Pallet QTY</div>
+                            </div>
+                        </div>
+                        <i class="icon ion-ios-arrow-right positive" data-comp-id="icon.3"
                             style="font-size: 40px;"></i>
                     </div>
                     <div class="row" data-comp-id="row.8"
                         ng-if="item.CurrentDowntimeStatus != &quot;Downtime&quot;">
-                        <div class="col" data-comp-id="column.13">
-                            <div class=" text-center" data-comp-id="text.16" style="font-size: 16px;">Current Status</div>
-                        </div>
                         <div class="col" data-comp-id="column.14">
-                            <div class=" text-center" data-comp-id="text.17"
+                            <div class=" text-center" data-comp-id="text.18" style="font-size: 16px;">Current Status</div>
+                        </div>
+                        <div class="col" data-comp-id="column.15">
+                            <div class=" text-center" data-comp-id="text.19"
                                 ng-bind="item.CurrentDowntimeStatus" style="font-size: 13px;color:#588E6E">Some text</div>
                         </div>
                     </div>
                     <div class="row" data-comp-id="row.9"
                         ng-if="item.CurrentDowntimeStatus == &quot;Downtime&quot;">
-                        <div class="col" data-comp-id="column.15">
-                            <div class=" text-center" data-comp-id="text.18">Current Downtime</div>
-                        </div>
                         <div class="col" data-comp-id="column.16">
+                            <div class=" text-center" data-comp-id="text.20">Current Downtime</div>
+                        </div>
+                        <div class="col" data-comp-id="column.17">
                             <label class="item item-stacked-label item-outside-label"
                                 data-comp-id="timeInput.1" style="padding:0px">
                                 <input ng-model="item.DowntimeHrMin" time-format="HH:mm" type="time">
