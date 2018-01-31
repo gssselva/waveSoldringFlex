@@ -109,26 +109,27 @@
                     </div>
                     <div class="row" data-comp-id="row.9"
                         ng-if="item.CurrentDowntimeStatus == &quot;Downtime&quot;">
-                        <div class="col" data-comp-id="column.16">
+                        <div class="col col-50" data-comp-id="column.16">
                             <div class=" text-center" data-comp-id="text.20" style="font-size: 13px;">Current Downtime</div>
                         </div>
                         <div class="col" data-comp-id="column.17">
-                            <label class="item item-stacked-label item-outside-label"
-                                data-comp-id="timeInput.1" style="padding:0px">
-                                <input ng-model="item.DowntimeHrMin" time-format="HH:mm" type="time">
-                            </label>
+                            <div data-comp-id="text.21" ng-bind="item.DowntimeHrMin"
+                                style="font-size: 13px;">Some text</div>
+                        </div>
+                        <div class="col col-25" data-comp-id="column.18">
+                            <div data-comp-id="text.22" style="font-size: 13px;color:red;">(HH:MM)</div>
                         </div>
                     </div>
                     <div class="row" data-comp-id="row.10" ng-if="item.TotalDowntimeDuration">
-                        <div class="col col-50" data-comp-id="column.18">
-                            <div data-comp-id="text.21" style="font-size: 13px;">Total Downtime Duration</div>
-                        </div>
-                        <div class="col" data-comp-id="column.19">
-                            <div data-comp-id="text.22" ng-bind="item.TotalDowntimeDuration"
-                                style="font-size: 13px;">Some text</div>
+                        <div class="col col-50" data-comp-id="column.19">
+                            <div data-comp-id="text.23" style="font-size: 13px;">Total Downtime Duration</div>
                         </div>
                         <div class="col" data-comp-id="column.20">
-                            <div data-comp-id="text.23" style="font-size: 13px;">(HH:MM)</div>
+                            <div data-comp-id="text.24" ng-bind="item.TotalDowntimeDuration"
+                                style="font-size: 13px;">Some text</div>
+                        </div>
+                        <div class="col" data-comp-id="column.21">
+                            <div data-comp-id="text.25" style="font-size: 13px;">(HH:MM)</div>
                         </div>
                     </div>
                 </div>
