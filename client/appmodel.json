@@ -132,6 +132,12 @@
         "update": {
           "type": "none"
         }
+      },
+      "comments_data": {
+        "type": "string"
+      },
+      "reason_code": {
+        "type": "string"
       }
     }
   }
