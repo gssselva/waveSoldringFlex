@@ -2,10 +2,19 @@ angular.module('app').controller('app_details', app_details);
 function app_details($scope, app) {
     'use strict';
     app.init($scope);
+    $scope.displayComments=false;
+    $scope.hideDetailsList=false;
+    
     $scope.commentsDisplay = function(item){
+        $scope.displayComments = true;
+        $scope.hideDetailsList = true;
         console.log("comments clicked...->"+JSON.stringify(item));
         $scope.data.reason_code = item.ReasonCode;
         $scope.data.comments_data = item.Comments;
+    }
+    $scope.closeComments = function(){
+        $scope.displayComments = false;
+        $scope.hideDetailsList = false;
     }
     $scope.goBack = function(){
         var companyCode ="2391";//need to replace static value with localstorage value.

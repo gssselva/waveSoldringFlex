@@ -22,7 +22,7 @@
                     <i class="icon ion-search placeholder-icon">Search</i>
                     <input ng-model="data.searchDeatils" placeholder="Search" type="search">
                 </label>
-                <div class="row" data-comp-id="row.3">
+                <div class="row" data-comp-id="row.3" ng-if="displayComments == true">
                     <div class="col" data-comp-id="column.3" style="padding: 0px; margin: 0px;">
                         <div class="card" data-comp-display="card.2" data-comp-id="div.1">
                             <div class="row stable-bg" data-comp-id="row.4">
@@ -34,13 +34,13 @@
                                 </div>
                                 <div class="col col-10 stable-border" data-comp-id="column.6">
                                     <i class="icon fa-icon fa-close" data-comp-id="icon.2"
-                                        style="font-size: 20px; padding: 0px 10px 0px 0px;"></i>
+                                        ng-click="closeComments()" style="font-size: 20px; padding: 0px 10px 0px 0px;"></i>
                                 </div>
                             </div>
                             <div class="row" data-comp-id="row.5">
                                 <div class="col" data-comp-id="column.7">
                                     <label class="item item-input item-stacked-label" data-comp-id="textAreaInput.1">
-                                        <span class="input-label">Comments</span>
+                                        <span class="input-label"></span>
                                         <textarea ng-model="data.comments_data" rows="4"></textarea>
                                     </label>
                                 </div>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row stable-bg" data-comp-id="row.6">
+                <div class="row stable-bg" data-comp-id="row.6" ng-if="hideDetailsList == false">
                     <div class="col" data-comp-id="column.8" style="margin: 0px; padding: 0px;">
                         <div class="card" data-comp-display="card.1" data-comp-id="div.2"
                             ng-repeat="item in data.details_list.DowntimeDeatils| filter : customDetailsSearch">
