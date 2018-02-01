@@ -69,12 +69,12 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.sitepreference', {
+    }).state('app.comments', {
         views: {
             app: {
-                controller: 'app_sitepreference',
+                controller: 'app_comments',
                 templateProvider: function (app) {
-                    return app.templateProvider('app.sitepreference');
+                    return app.templateProvider('app.comments');
                 }
             }
         }

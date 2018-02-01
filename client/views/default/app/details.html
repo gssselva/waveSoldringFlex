@@ -22,69 +22,91 @@
                     <i class="icon ion-search placeholder-icon">Search</i>
                     <input ng-model="data.searchDeatils" placeholder="Search" type="search">
                 </label>
-                <div class="row stable-bg" data-comp-id="row.3">
-                    <div class="col" data-comp-id="column.3" style="margin: 0px; padding: 0px;">
-                        <div class="card" data-comp-display="card.1" data-comp-id="div.1"
-                            ng-repeat="item in data.details_list.DowntimeDeatils| filter : customDetailsSearch">
-                            <div class="row stable-bg" data-comp-id="row.4" style="padding: 0px;">
-                                <div class="col col-33" data-comp-id="column.4">
-                                    <div data-comp-id="text.2">ReasonCode :</div>
+                <div class="row" data-comp-id="row.3" ng-if="displayComments == true">
+                    <div class="col" data-comp-id="column.3" style="padding: 0px; margin: 0px;">
+                        <div class="card" data-comp-display="card.2" data-comp-id="div.1">
+                            <div class="row stable-bg" data-comp-id="row.4">
+                                <div class="col" data-comp-id="column.4">
+                                    <div class=" text-right" data-comp-id="text.2">ReasonCode :</div>
                                 </div>
                                 <div class="col" data-comp-id="column.5">
-                                    <div data-comp-id="text.3" ng-bind="item.ReasonCode">Sample 11</div>
+                                    <div class=" text-left" data-comp-id="text.3" ng-bind="data.reason_code">Some text</div>
                                 </div>
-                                <div class="col text-center col-20" data-comp-id="column.6"
-                                    style="padding: 0px;">
-                                    <i class="icon fa-icon fa-commenting" data-comp-id="icon.2"
-                                        ng-click="commentsDisplay()" style="font-size: 30px; margin: 0px; padding: 0px;"></i>
+                                <div class="col col-10 stable-border" data-comp-id="column.6">
+                                    <i class="icon fa-icon fa-close" data-comp-id="icon.2"
+                                        ng-click="closeComments()" style="font-size: 20px; padding: 0px 10px 0px 0px;"></i>
                                 </div>
                             </div>
                             <div class="row" data-comp-id="row.5">
-                                <div class="col col-33" data-comp-id="column.7">
-                                    <div data-comp-id="text.4">Description :</div>
-                                </div>
-                                <div class="col" data-comp-id="column.8">
-                                    <div data-comp-id="text.5" ng-bind="item.ReasonDescription">Some text</div>
+                                <div class="col" data-comp-id="column.7">
+                                    <label class="item item-input item-stacked-label" data-comp-id="textAreaInput.1">
+                                        <span class="input-label"></span>
+                                        <textarea ng-model="data.comments_data" rows="4"></textarea>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="row" data-comp-id="row.6">
+                        </div>
+                    </div>
+                </div>
+                <div class="row stable-bg" data-comp-id="row.6" ng-if="hideDetailsList == false">
+                    <div class="col" data-comp-id="column.8" style="margin: 0px; padding: 0px;">
+                        <div class="card" data-comp-display="card.1" data-comp-id="div.2"
+                            ng-repeat="item in data.details_list.DowntimeDeatils| filter : customDetailsSearch">
+                            <div class="row stable-bg" data-comp-id="row.7" style="padding: 0px;">
                                 <div class="col col-33" data-comp-id="column.9">
-                                    <div class=" nocolor-bg" data-comp-id="div.2"
+                                    <div data-comp-id="text.4">ReasonCode :</div>
+                                </div>
+                                <div class="col" data-comp-id="column.10">
+                                    <div data-comp-id="text.5" ng-bind="item.ReasonCode">Sample 11</div>
+                                </div>
+                                <div class="col text-center col-20" data-comp-id="column.11"
+                                    style="padding: 0px;">
+                                    <i class="icon fa-icon fa-commenting" data-comp-id="icon.3"
+                                        ng-click="commentsDisplay(item)"
+                                        style="font-size: 30px; margin: 0px; padding: 0px;"></i>
+                                </div>
+                            </div>
+                            <div class="row" data-comp-id="row.8">
+                                <div class="col col-33" data-comp-id="column.12">
+                                    <div data-comp-id="text.6">Description :</div>
+                                </div>
+                                <div class="col" data-comp-id="column.13">
+                                    <div data-comp-id="text.7" ng-bind="item.ReasonDescription">Some text</div>
+                                </div>
+                            </div>
+                            <div class="row" data-comp-id="row.9">
+                                <div class="col col-33" data-comp-id="column.14">
+                                    <div class=" nocolor-bg" data-comp-id="div.3"
                                         style="border-radius: 5px; border:1px solid #b2b2b2; padding: 10px;">
-                                        <div data-comp-id="text.6" style="font-size: 15px;">
-                                            <i class="icon fa-icon fa-play" data-comp-id="icon.3"
+                                        <div data-comp-id="text.8" style="font-size: 15px;">
+                                            <i class="icon fa-icon fa-play" data-comp-id="icon.4"
                                                 style="color: rgb(34, 181, 114); padding: 3px;"></i>Start</div>
                                         <label class="item" data-comp-id="timeInput.1" style="padding:0;">
                                             <input ng-model="item.DtStartTime" time-format="HH:mm" type="time">
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-33" data-comp-id="column.10">
-                                    <div data-comp-id="div.3"
+                                <div class="col col-33" data-comp-id="column.15">
+                                    <div data-comp-id="div.4"
                                         style="border-radius: 5px;border:1px solid #b2b2b2; padding: 10px;">
-                                        <div data-comp-id="text.7" style="font-size: 15px;">
-                                            <i class="icon fa-icon fa-stop assertive" data-comp-id="icon.4"
+                                        <div data-comp-id="text.9" style="font-size: 15px;">
+                                            <i class="icon fa-icon fa-stop assertive" data-comp-id="icon.5"
                                                 style="padding: 3px;"></i>Stop</div>
                                         <label class="item" data-comp-id="timeInput.2" style="padding:0;">
                                             <input ng-model="item.DtEndTime" time-format="HH:mm" type="time">
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col col-33" data-comp-id="column.11">
-                                    <div data-comp-id="div.4"
+                                <div class="col col-33" data-comp-id="column.16">
+                                    <div data-comp-id="div.5"
                                         style="border-radius: 5px; border: 1px solid rgb(178, 178, 178); padding: 10px;">
-                                        <div data-comp-id="text.8" style="font-size: 15px;">
-                                            <i class="icon ion-android-time energized" data-comp-id="icon.5"
+                                        <div data-comp-id="text.10" style="font-size: 15px;">
+                                            <i class="icon ion-android-time energized" data-comp-id="icon.6"
                                                 style="padding: 2px;"></i>Duration</div>
                                         <label class="item" data-comp-id="timeInput.3" style="padding:0;">
                                             <input ng-model="item.DtDuration" time-format="HH:mm" type="time">
                                         </label>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="row" data-comp-id="row.7">
-                                <div class="col" data-comp-id="column.12">
-                                    <div data-comp-id="text.9" ng-bind="item.Comments">Some text</div>
                                 </div>
                             </div>
                         </div>

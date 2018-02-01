@@ -132,19 +132,19 @@
         "update": {
           "type": "none"
         }
+      },
+      "comments_data": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "reason_code": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
       }
     }
-  },
-  "sitepreference": {
-    "type": "object",
-    "properties": {
-      "searchstring": {
-        "type": "string"
-      },
-      "search": {
-        "type": "action"
-      }
-    },
-    "comment": "filterandsort"
   }
 }

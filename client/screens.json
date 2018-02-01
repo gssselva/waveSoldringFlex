@@ -51,11 +51,10 @@
       "model": "details"
     },
     {
-      "id": "sitepreference",
-      "name": "sitepreference",
-      "sourceScreenId": "app.filterandsort",
-      "sourceAppId": "FilterAndSort",
-      "model": "sitepreference"
+      "id": "comments",
+      "name": "comments",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
     }
   ],
   "sourceAppId": "_blank",
