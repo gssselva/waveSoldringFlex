@@ -69,14 +69,5 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
-    }).state('app.sitepreference', {
-        views: {
-            app: {
-                controller: 'app_sitepreference',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.sitepreference');
-                }
-            }
-        }
     });
 });

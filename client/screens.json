@@ -49,13 +49,6 @@
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank",
       "model": "details"
-    },
-    {
-      "id": "sitepreference",
-      "name": "sitepreference",
-      "sourceScreenId": "app.filterandsort",
-      "sourceAppId": "FilterAndSort",
-      "model": "sitepreference"
     }
   ],
   "sourceAppId": "_blank",
