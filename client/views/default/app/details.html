@@ -30,7 +30,7 @@
                                     <div class=" text-right" data-comp-id="text.2">ReasonCode :</div>
                                 </div>
                                 <div class="col" data-comp-id="column.5">
-                                    <div class=" text-left" data-comp-id="text.3">Some text</div>
+                                    <div class=" text-left" data-comp-id="text.3" ng-bind="data.reason_code">Some text</div>
                                 </div>
                                 <div class="col col-10 stable-border" data-comp-id="column.6">
                                     <i class="icon fa-icon fa-close" data-comp-id="icon.2"
@@ -41,7 +41,7 @@
                                 <div class="col" data-comp-id="column.7">
                                     <label class="item item-input item-stacked-label" data-comp-id="textAreaInput.1">
                                         <span class="input-label">Comments</span>
-                                        <textarea rows="4"></textarea>
+                                        <textarea ng-model="data.comments_data" rows="4"></textarea>
                                     </label>
                                 </div>
                             </div>

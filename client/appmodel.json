@@ -134,10 +134,16 @@
         }
       },
       "comments_data": {
-        "type": "string"
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
       },
       "reason_code": {
-        "type": "string"
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
       }
     }
   }

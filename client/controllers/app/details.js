@@ -4,6 +4,8 @@ function app_details($scope, app) {
     app.init($scope);
     $scope.commentsDisplay = function(item){
         console.log("comments clicked...->"+JSON.stringify(item));
+        $scope.data.reason_code = item.ReasonCode;
+        $scope.data.comments_data = item.Comments;
     }
     $scope.goBack = function(){
         var companyCode ="2391";//need to replace static value with localstorage value.
