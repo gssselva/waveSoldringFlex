@@ -69,5 +69,14 @@ angular.module('app').config(function ($stateProvider) {
                 }
             }
         }
+    }).state('app.comments', {
+        views: {
+            app: {
+                controller: 'app_comments',
+                templateProvider: function (app) {
+                    return app.templateProvider('app.comments');
+                }
+            }
+        }
     });
 });

@@ -49,6 +49,12 @@
       "sourceScreenId": "app.blank",
       "sourceAppId": "_blank",
       "model": "details"
+    },
+    {
+      "id": "comments",
+      "name": "comments",
+      "sourceScreenId": "app.blank",
+      "sourceAppId": "_blank"
     }
   ],
   "sourceAppId": "_blank",
