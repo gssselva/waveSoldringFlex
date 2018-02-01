@@ -3,7 +3,7 @@ function app_details($scope, app) {
     'use strict';
     app.init($scope);
     $scope.commentsDisplay = function(item){
-        console.log("comments clicked...->"+item);
+        console.log("comments clicked...->"+JSON.stringify(item));
     }
     $scope.goBack = function(){
         var companyCode ="2391";//need to replace static value with localstorage value.
