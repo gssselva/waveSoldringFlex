@@ -2,24 +2,27 @@ angular.module('app').controller('app_details', app_details);
 function app_details($scope, app) {
     'use strict';
     app.init($scope);
-    $scope.displayComments=false;
-    $scope.hideDetailsList=false;
+    $scope.displayComments=false;// to display comments data
+    $scope.hideDetailsList=false;// to hide all details list
     
     $scope.commentsDisplay = function(item){
         $scope.displayComments = true;
         $scope.hideDetailsList = true;
-        console.log("comments clicked...->"+JSON.stringify(item));
+        
         $scope.data.reason_code = item.ReasonCode;
         $scope.data.comments_data = item.Comments;
-    }
+    };
+    
     $scope.closeComments = function(){
         $scope.displayComments = false;
         $scope.hideDetailsList = false;
-    }
+    };
+    
     $scope.goBack = function(){
         var companyCode ="2391";//need to replace static value with localstorage value.
         app.call('wavesoldering_methods.getCompanyByCode', companyCode);
-    }
+    };
+    
     $scope.data.searchDeatils ='';
     $scope.customDetailsSearch = function (item) {
         if (!$scope.data.searchDeatils) {
@@ -31,9 +34,11 @@ function app_details($scope, app) {
         });
         return matched;
     };
+    
     function escapeRegExp(token) {
         return token.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
     }
+    
     var match = function (item, val) {
         var regex = new RegExp(val, 'i');
         return item.ReasonDescription.toLowerCase().search(regex) >= 0;//search is made based on ReasonDescription
