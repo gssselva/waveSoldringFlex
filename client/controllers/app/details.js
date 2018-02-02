@@ -20,7 +20,7 @@ function app_details($scope, app) {
     
     $scope.goBack = function(){
         var companyCode ="2391";//need to replace static value with localstorage value.
-        app.call('wavesoldering_methods.getCompanyByCode', companyCode);
+        app.call('wavesoldering_methods.getCompanyByCode', $localStorage.CompanyCode);
     };
     
     $scope.data.searchDeatils ='';

@@ -10,7 +10,7 @@ function app_dashboard($scope, app) {
       app.call('wavesoldering_methods.sitePreference', $localStorage.UserName);
     };
     $scope.getDetails = function (data,companyCode) {
-     
+     $localStorage.CompanyCode = companyCode;
     var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
     app.call('wavesoldering_methods.getDownTimeDetails', parameter);
     };
