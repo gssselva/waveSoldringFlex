@@ -1,5 +1,5 @@
 angular.module('app').controller('app_dashboard', app_dashboard);
-function app_dashboard($scope, app) {
+function app_dashboard($scope, app, $localStorage) {
     'use strict';
     app.init($scope,function(){
         
