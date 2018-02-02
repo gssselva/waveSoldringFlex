@@ -49,11 +49,11 @@ function app_sitepage($scope, app,$ionicPopup,$localStorage) {
             });
             
     }
-    $scope.defaultSite = function(){
-        //app.call('wavesoldering_methods.getCompanyByCode', selectedCompany.CompanyCode);
-        var adid = "gssselva";//hardcoded need to replace with localstorage value.
-        var parameters ={"adid":adid,
-             "CompanyCode":selectedCompany.CompanyCode};
-        app.call('wavesoldering_methods.setPreferedSite', parameters);
-    }
+    // $scope.defaultSite = function(){
+    //     //app.call('wavesoldering_methods.getCompanyByCode', selectedCompany.CompanyCode);
+    //     var adid = "gssselva";//hardcoded need to replace with localstorage value.
+    //     var parameters ={"adid":adid,
+    //          "CompanyCode":selectedCompany.CompanyCode};
+    //     app.call('wavesoldering_methods.setPreferedSite', parameters);
+    // }
 }
