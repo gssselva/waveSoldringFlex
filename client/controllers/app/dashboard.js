@@ -12,7 +12,7 @@ function app_dashboard($scope, app, $ionicPopup, $localStorage) {
     $scope.getDetails = function (data,companyCode) {
      $localStorage.CompanyCode = companyCode;
      var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
-     if(data.IsStopped == "true"){
+     if(data.IsStopped === true){
          console.log("in if...");
         var alertPopup = $ionicPopup.alert({
          title: 'Warning',
