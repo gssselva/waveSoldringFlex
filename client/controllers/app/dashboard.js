@@ -1,5 +1,5 @@
 angular.module('app').controller('app_dashboard', app_dashboard);
-function app_dashboard($scope, app, $localStorage) {
+function app_dashboard($scope, app, $ionicPopup, $localStorage) {
     'use strict';
     app.init($scope,function(){
         
@@ -11,7 +11,20 @@ function app_dashboard($scope, app, $localStorage) {
     };
     $scope.getDetails = function (data,companyCode) {
      $localStorage.CompanyCode = companyCode;
-    var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
-    app.call('wavesoldering_methods.getDownTimeDetails', parameter);
+     var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
+     if(data.IsStopped == "true"){
+         
+        var alertPopup = $ionicPopup.alert({
+         title: 'Warning',
+         template: 'No Event Found.'
+      });
+
+      alertPopup.then(function(res) {
+         // Custom functionality....
+      });
+      
+     }else{
+        app.call('wavesoldering_methods.getDownTimeDetails', parameter);   
+      }
     };
 }
