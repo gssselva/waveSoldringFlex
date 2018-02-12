@@ -13,7 +13,7 @@ function app_dashboard($scope, app, $ionicPopup, $localStorage) {
      $localStorage.CompanyCode = companyCode;
      var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
      if(data.IsStopped == "true"){
-         
+         console.log("in if...");
         var alertPopup = $ionicPopup.alert({
          title: 'Warning',
          template: 'No Event Found.'
@@ -24,6 +24,7 @@ function app_dashboard($scope, app, $ionicPopup, $localStorage) {
       });
       
      }else{
+         console.log("in else!!!...");
         app.call('wavesoldering_methods.getDownTimeDetails', parameter);   
       }
     };
