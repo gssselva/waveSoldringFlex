@@ -61,14 +61,14 @@
                 <div class="col col-75" data-comp-id="column.8">
                     <div data-comp-id="text.10" ng-bind="item.BuildingName" style="font-size: 15px;">Some text</div>
                 </div>
-                <div class="col col-25" data-comp-id="column.9" ng-if="item.IsStopped == true"
+                <div class="col col-25" data-comp-id="column.9" ng-if="item.IsStopped == false"
                     style="padding: 5px 0px 0px; margin: 0px;">
                     <div data-comp-id="text.11">
                         <i class="icon fa-icon fa-circle" data-comp-id="icon.1"
                             style="color: rgb(12, 174, 99); padding: 5px;"></i>ON</div>
                 </div>
-                <div class="col col-25" data-comp-id="column.10"
-                    ng-if="item.IsStopped == false;" style="padding: 5px 0px 0px;">
+                <div class="col col-25" data-comp-id="column.10" ng-if="item.IsStopped == true;"
+                    style="padding: 5px 0px 0px;">
                     <div data-comp-id="text.12">
                         <i class="icon fa-icon fa-circle dark" data-comp-id="icon.2"
                             style="padding: 5px;"></i>OFF</div>
