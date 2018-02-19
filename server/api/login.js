@@ -30,7 +30,7 @@ exports.login = function (page,params) {
                     
             }else if(response.IsSuccess == false && +response.IsDefaultCompany == false){
                 //invlaid user
-                invalidUser();
+                invalidUser(page,response);
             }
             
             // page.data(function(data) {
@@ -64,3 +64,13 @@ var sitePreference = function(adid){
     xmlhttp.send();
     return list;
       }
+
+var invalidUser = function(page,response){
+    //logger.error("Invalid User.Please use valid credentials."); 
+    //Need to handel invalid user error.now we are using inline text to display error msg.
+    page.data(function(data) {
+                data.errorMessage = "Invalid User.Try agian...";
+            })
+                .screen("login");
+}
+
