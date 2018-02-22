@@ -9,7 +9,7 @@ function app_sitepage($scope, app,$ionicPopup,$localStorage) {
     var selectedCompany;
     
     $scope.data.searchInput ='';
-    $scope.data.errorData ='';
+    //$scope.data.errorData ='';
     $scope.customSearch = function (item) {
         if (!$scope.data.searchInput) {
             return true;
