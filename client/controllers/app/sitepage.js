@@ -4,11 +4,12 @@ function app_sitepage($scope, app,$ionicPopup,$localStorage) {
     app.init($scope,function(data){
     //     var adid ='gssselva';//need to replace static value with localstorage value.
     // app.call('wavesoldering_methods.sitePreference', adid);
-     //console.log("in site init-->"+data);
+     console.log("in site init-->"+data);
     });
     var selectedCompany;
     
     $scope.data.searchInput ='';
+    $scope.data.errorData ='';
     $scope.customSearch = function (item) {
         if (!$scope.data.searchInput) {
             return true;
