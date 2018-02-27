@@ -12,8 +12,8 @@ function app_login($scope, app, $q, $localStorage) {
     
     $scope.login = function () {
     var credentials = {"UserName":$scope.data.username,
-             "PassWord":$scope.data.password};
-            $localStorage.UserName = $scope.data.username;
+             "password":$scope.data.password};
+            $localStorage.username = $scope.data.username;
         app.call('login.login', credentials);
     };
 
