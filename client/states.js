@@ -6,15 +6,6 @@ angular.module('app').config(function ($stateProvider) {
         templateProvider: function (app) {
             return app.templateProvider('app');
         }
-    }).state('app.loginscreen', {
-        views: {
-            app: {
-                controller: 'app_loginscreen',
-                templateProvider: function (app) {
-                    return app.templateProvider('app.loginscreen');
-                }
-            }
-        }
     }).state('app.menu', {
         views: {
             app: {
