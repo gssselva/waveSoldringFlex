@@ -12,10 +12,11 @@
                 style="border-top: 30px;">
                 <div data-comp-id="text.1">Site Preference</div>
             </div>
-            <div class="item" data-comp-id="item.2">
+            <div class="item" data-comp-id="item.2"
+                ng-click="app.call('wavesoldering_methods.getCompanyByCode', $localStorage.CompanyCode);">
                 <div data-comp-id="text.2">Dashboard</div>
             </div>
-            <div class="item" data-comp-id="item.3" ng-click="app.logout();">
+            <div class="item" data-comp-id="item.3" ng-click="app.logout()">
                 <div data-comp-id="text.3">Logout</div>
             </div>
         </div>
