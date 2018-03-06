@@ -1,13 +1,14 @@
 angular.module('app').controller('app', app);
 function app($scope, app, $localStorage) {
     'use strict';
-    $scope. = function(item){
+    
+    $scope.menuItem = function(item){
         if (item == "dashboard") {
-            var comp_code = $localStorage.CompanyCode
+           var comp_code = $localStorage.CompanyCode
            app.call('wavesoldering_methods.getCompanyByCode', comp_code);
         } else {
             
         }
-     
- }
+     }
+ 
 }
