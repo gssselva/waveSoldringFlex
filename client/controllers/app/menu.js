@@ -3,8 +3,11 @@ function app_menu($scope, app, $localStorage) {
     'use strict';
     app.init($scope);
     
- $scope.app.dashboardCall = function(){
-     var comp_code = $localStorage.CompanyCode
+    var comp_code = $localStorage.CompanyCode
      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
- }
+
+//  $scope.app.dashboardCall = function(){
+//      var comp_code = $localStorage.CompanyCode
+//      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
+//  }
 }
