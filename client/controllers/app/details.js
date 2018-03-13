@@ -16,7 +16,7 @@ function app_details($scope, app, $localStorage, $ionicPopup) {
         
         $scope.data.reason_code = item.ReasonCode;
         $scope.data.comments_data = item.Comments;
-        console.log("id---->>>"+$scope.data.services_code);
+        
     //     var alertPopup = $ionicPopup.alert({
     //      title: 'ReasonCode :'+item.ReasonCode,
     //      template: item.Comments
