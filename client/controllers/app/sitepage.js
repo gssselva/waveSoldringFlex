@@ -5,7 +5,7 @@ function app_sitepage($scope, app,$ionicPopup,$localStorage) {
     app.init($scope,function(data){
     //     var adid ='gssselva';//need to replace static value with localstorage value.
     // app.call('wavesoldering_methods.sitePreference', adid);
-     //console.log("in site init-->"+data);
+     console.log("in site init-->"+data);
      if($localStorage.CompanyCode){
          $scope.showMenu = true;
      }
