@@ -2,7 +2,7 @@ angular.module('app').controller('app_details', app_details);
 function app_details($scope, app, $localStorage, $ionicPopup) {
     'use strict';
     app.init($scope,function(data){
-        console.log("data in details-->"+data);
+        console.log("data in details-->"+data.details_list);
         if (!$scope.data) {
             $scope.data = {};
         }
