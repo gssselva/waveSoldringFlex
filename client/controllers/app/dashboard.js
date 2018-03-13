@@ -3,7 +3,7 @@ function app_dashboard($scope, app, $ionicPopup, $localStorage) {
     'use strict';
     app.init($scope,function(){
         
-        //console.log('data in dashboard-->', $scope.data);
+        console.log('data in dashboard-->', $scope.data);
     });
     $scope.sitePreference=function(){
       var adid ='gssselva';//need to replace static value with localstorage value.
