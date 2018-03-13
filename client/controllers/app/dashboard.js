@@ -1,7 +1,7 @@
 angular.module('app').controller('app_dashboard', app_dashboard);
 function app_dashboard($scope, app, $ionicPopup, $localStorage) {
     'use strict';
-    app.init($scope,function(){
+    app.init($scope,function(data){
         
         console.log('data in dashboard-->', $scope.data);
     });
