@@ -15,7 +15,7 @@ function app($scope, app, $localStorage,$ionicPopup) {
          confirmPopup.then(function(res) {
             if(res) {
                  console.log('yes logout!');
-                 app.logout();
+                 app.call(app.logout());
                 } else {
                     console.log('no log_out!');
                 }
