@@ -15,7 +15,7 @@ function app($scope, app, $localStorage,$ionicPopup) {
          confirmPopup.then(function(res) {
             if(res) {
                  console.log('yes logout!');
-                 app.call('wavesoldering_methods.log_out',params);
+                 app.call('wavesoldering_methods.log_out');
                 } else {
                     console.log('no log_out!');
                 }
