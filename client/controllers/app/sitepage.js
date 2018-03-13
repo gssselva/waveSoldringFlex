@@ -1,10 +1,14 @@
 angular.module('app').controller('app_sitepage', app_sitepage);
 function app_sitepage($scope, app,$ionicPopup,$localStorage) {
     'use strict';
+    $scope.showMenu = false;
     app.init($scope,function(data){
     //     var adid ='gssselva';//need to replace static value with localstorage value.
     // app.call('wavesoldering_methods.sitePreference', adid);
-     //console.log("in site init-->"+data);
+     console.log("in site init-->"+data);
+     if($localStorage.CompanyCode){
+         $scope.showMenu = true;
+     }
     });
     var selectedCompany;
     
@@ -41,7 +45,7 @@ function app_sitepage($scope, app,$ionicPopup,$localStorage) {
             if(res) {
                  console.log('yes!');
                  var adid = "gssselva";//hardcoded need to replace with localstorage value.
-                 var parameters ={"adid":$localStorage.UserName,
+                 var parameters ={"adid":$localStorage.username,
                     "CompanyCode":selectedCompany.CompanyCode};
                      app.call('site_prefered.setPreferedSite', parameters);
                 } else {

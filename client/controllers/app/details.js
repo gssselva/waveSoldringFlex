@@ -1,7 +1,12 @@
 angular.module('app').controller('app_details', app_details);
-function app_details($scope, app, $localStorage) {
+function app_details($scope, app, $localStorage, $ionicPopup) {
     'use strict';
-    app.init($scope);
+    app.init($scope,function(data){
+        if (!$scope.data) {
+            $scope.data = {};
+        }
+    });
+    $scope.services_code;
     $scope.displayComments=false;// to display comments data
     $scope.hideDetailsList=false;// to hide all details list
     
@@ -11,6 +16,17 @@ function app_details($scope, app, $localStorage) {
         
         $scope.data.reason_code = item.ReasonCode;
         $scope.data.comments_data = item.Comments;
+        
+    //     var alertPopup = $ionicPopup.alert({
+    //      title: 'ReasonCode :'+item.ReasonCode,
+    //      template: item.Comments
+    //   });
+
+    //   alertPopup.then(function(res) {
+    //      // Custom functionality....
+    //      var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
+    //      app.call('wavesoldering_methods.getDownTimeDetails', parameter);   
+    //   });
     };
     
     $scope.closeComments = function(){

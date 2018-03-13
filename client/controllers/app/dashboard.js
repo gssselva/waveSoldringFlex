@@ -7,7 +7,7 @@ function app_dashboard($scope, app, $ionicPopup, $localStorage) {
     });
     $scope.sitePreference=function(){
       var adid ='gssselva';//need to replace static value with localstorage value.
-      app.call('wavesoldering_methods.sitePreference', $localStorage.UserName);
+      app.call('wavesoldering_methods.sitePreference', $localStorage.username);
     };
     $scope.getDetails = function (data,companyCode) {
      $localStorage.CompanyCode = companyCode;

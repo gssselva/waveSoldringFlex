@@ -1,6 +1,9 @@
 <ion-view data-comp-id="ionic-view.1">
     <ion-nav-bar align-title="" class=" bar-dark" data-comp-id="nav-bar.1">
-        <ion-nav-buttons side="left"></ion-nav-buttons>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon ion-navicon" data-comp-id="button.1"
+                ng-click="app.showMenu()" ng-if="showMenu"></button>
+        </ion-nav-buttons>
         <ion-nav-title data-comp-id="nav-title.1">Set Preference</ion-nav-title>
         <ion-nav-buttons side="right"></ion-nav-buttons>
     </ion-nav-bar>
@@ -34,6 +37,11 @@
                 <span class="item-note"></span>
             </div>
             <i class="icon ion-ios-arrow-right" data-comp-id="icon.2" style="font-size:32px"></i>
+        </div>
+        <div class="row" data-comp-id="row.2" ng-if="data.errorData">
+            <div class="col" data-comp-id="column.2">
+                <div data-comp-id="text.4" ng-bind="data.errorData" style="color:red">Some text</div>
+            </div>
         </div>
     </ion-content>
     <!--<ion-footer-bar data-comp-id="footer-bar.1" dynamic-fixed-footer="">-->
