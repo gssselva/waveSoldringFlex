@@ -9,7 +9,7 @@ exports.login = function (page,params) {
     var xmlhttp = new XMLHttpRequest();
     var url = "http://sacnte245.americas.ad.flextronics.com:9094/Authentication";
     var reqResponse = [];
-    var enCredential ={'UserName':btoa(params.UserName),'PassWord':btoa(params.PassWord)}
+    var enCredential ={'username':btoa(params.username),'password':btoa(params.password)}
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(this.responseText);
@@ -21,7 +21,7 @@ exports.login = function (page,params) {
                 internalMethods.getCompanyByCode(page,response.CompanyCode);
             }else if(response.IsSuccess == true && +response.IsDefaultCompany == false){
                 //valid user without default site preference
-                reqResponse = sitePreference(params.UserName);
+                reqResponse = sitePreference(params.username);
                 
                 page.data(function(data) {
                     data.sitelist = reqResponse;

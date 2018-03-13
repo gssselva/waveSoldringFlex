@@ -16,9 +16,19 @@ exports.setPreferedSite = function (page,params) {
                 if(response == true){
                     internalMethods.getCompanyByCode(page,params.CompanyCode);
                 }else{
-                    //if the set default site request fails
+                    //if the set default site request fails 
+                    page.data(function(data) {
+                        data.errorData = "Prefered site cannot be updated!!";
+                    })
+                        .screen("sitepage");   
                 }
-            }
+            }else{
+                //status failure condition.
+                page.data(function(data) {
+                    data.errorData = "Unabel to process.Try again";
+                })
+                    .screen("sitepage");
+             }
         };
         xmlhttp.open("POST", url, false);
         xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
