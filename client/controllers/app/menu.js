@@ -7,5 +7,7 @@ function app_menu($scope, app, $localStorage) {
 //      var comp_code = $localStorage.CompanyCode
 //      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
 //  }
-
+$scope.log_out = function(){
+     app.logout();
+ }
 }
