@@ -45,7 +45,7 @@ function app_sitepage($scope, app,$ionicPopup,$localStorage) {
             if(res) {
                  console.log('yes!');
                  var adid = "gssselva";//hardcoded need to replace with localstorage value.
-                 var parameters ={"adid":$localStorage.UserName,
+                 var parameters ={"adid":$localStorage.username,
                     "CompanyCode":selectedCompany.CompanyCode};
                      app.call('site_prefered.setPreferedSite', parameters);
                 } else {
