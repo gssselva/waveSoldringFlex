@@ -2,15 +2,15 @@ angular.module('app').controller('app_dashboard', app_dashboard);
 function app_dashboard($scope, app, $ionicPopup, $localStorage) {
     'use strict';
     app.init($scope,function(data){
-        
-        console.log('data in dashboard-->', $scope.data.dashboard_list.CompanyCode);
+        //console.log('data in dashboard-->', $scope.data.dashboard_list.CompanyCode);
+        $localStorage.CompanyCode = $scope.data.dashboard_list.CompanyCode;
     });
     $scope.sitePreference=function(){
       var adid ='gssselva';//need to replace static value with localstorage value.
       app.call('wavesoldering_methods.sitePreference', $localStorage.username);
     };
     $scope.getDetails = function (data,companyCode) {
-     $localStorage.CompanyCode = companyCode;
+     //$localStorage.CompanyCode = companyCode;
      var parameter = {'selectedItem': data, 'CompanyCode': companyCode};
      if(data.IsStopped === true){
         var alertPopup = $ionicPopup.alert({
