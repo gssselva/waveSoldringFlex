@@ -1,7 +1,11 @@
 angular.module('app').controller('app_details', app_details);
 function app_details($scope, app, $localStorage) {
     'use strict';
-    app.init($scope);
+    app.init($scope,function(data){
+        if (!$scope.data) {
+            $scope.data = {};
+        }
+    });
     $scope.displayComments=false;// to display comments data
     $scope.hideDetailsList=false;// to hide all details list
     
