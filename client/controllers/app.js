@@ -6,6 +6,14 @@ function app($scope, app, $localStorage,$ionicPopup) {
      var comp_code = $localStorage.CompanyCode;
      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
  }
+ 
+app.loginScreen = 'app.login';
+app.loginModel = 'login';
+app.loginAction = 'login';
+app.loginErrorField = 'errorMessage';
+app.loginIsAction = false;
+
+
 //  $scope.log_out = function(){
 //      var confirmPopup = $ionicPopup.confirm({
 //              title: 'Logout',
