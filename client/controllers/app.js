@@ -6,6 +6,7 @@ function app($scope, app, $localStorage,$ionicPopup) {
      var comp_code = $localStorage.CompanyCode;
      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
  }
+ 
 StatusBar.hide();
 screen.orientation.lock('portrait'); 
 app.loginScreen = 'app.login';
