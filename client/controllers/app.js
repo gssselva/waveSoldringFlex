@@ -6,13 +6,21 @@ function app($scope, app, $localStorage,$ionicPopup) {
      var comp_code = $localStorage.CompanyCode;
      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
  }
- 
+StatusBar.hide();
+screen.orientation.lock('portrait'); 
 app.loginScreen = 'app.login';
 app.loginModel = 'login';
 app.loginAction = 'login';
 app.loginErrorField = 'errorMessage';
 app.loginIsAction = false;
 
+
+
+/*screen.orientation.lock('portrait').then(function success() {
+    console.log("Successfully locked the orientation");
+}, function error(errMsg) {
+    console.log("Error locking the orientation :: " + errMsg);
+});*/
 
 //  $scope.log_out = function(){
 //      var confirmPopup = $ionicPopup.confirm({
