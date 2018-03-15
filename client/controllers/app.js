@@ -1,11 +1,22 @@
 angular.module('app').controller('app', app);
 function app($scope, app, $localStorage,$ionicPopup) {
     'use strict';
+    app.init($scope,function() {
+        if(StatusBar)
+        {
+         StatusBar.hide();
+        }
+        if(screen&&screen.orientation)
+        {
+         screen.orientation.lock('portrait');
+        }
+    });
     
      $scope.dashboardCall = function(){
      var comp_code = $localStorage.CompanyCode;
      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
  }
+
 /* 
 if(StatusBar)
 {
