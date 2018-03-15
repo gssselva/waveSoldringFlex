@@ -17,22 +17,11 @@ function app($scope, app, $localStorage,$ionicPopup) {
      app.call('wavesoldering_methods.getCompanyByCode', comp_code);
  }
 
-/* 
-if(StatusBar)
-{
-StatusBar.hide();
-}
-if(screen&&screen.orientation)
-{
-screen.orientation.lock('portrait'); 
-}*/
 app.loginScreen = 'app.login';
 app.loginModel = 'login';
 app.loginAction = 'login';
 app.loginErrorField = 'errorMessage';
 app.loginIsAction = false;
-
-
 
 /*screen.orientation.lock('portrait').then(function success() {
     console.log("Successfully locked the orientation");
