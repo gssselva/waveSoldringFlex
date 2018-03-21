@@ -2,13 +2,17 @@ angular.module('app').controller('app', app);
 function app($scope, app, $localStorage,$ionicPopup) {
     'use strict';
     app.init($scope,function() {
-        if(StatusBar)
-        {
-         StatusBar.hide();
+        if (window.isPlatform && window.isPlatform.powWow() && window.isPlatform.iOS() && window.cordova && window.cordova.plugins) {
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
         }
-        if(screen&&screen.orientation)
-        {
-         screen.orientation.lock('portrait');
+
+        if (window.StatusBar) {
+            StatusBar.hide();
+            document.body.classList.add('nostatusbar');
+        }
+
+        if (window.screen && window.screen.orientation) {
+            screen.orientation.lock('portrait');
         }
     });
     
