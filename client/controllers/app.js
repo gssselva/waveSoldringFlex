@@ -1,7 +1,15 @@
 angular.module('app').controller('app', app);
 function app($scope, app, $localStorage,$ionicPopup) {
     'use strict';
-    app.init($scope,function() {
+         if (window.isPlatform && window.isPlatform.powWow() && window.isPlatform.iOS() && window.cordova && window.cordova.plugins) {
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
+        }
+
+        if (window.screen && window.screen.orientation) {
+            screen.orientation.lock('portrait');
+        }
+ 
+ /*   app.init($scope,function() {
         if (window.isPlatform && window.isPlatform.powWow() && window.isPlatform.iOS() && window.cordova && window.cordova.plugins) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
         }
@@ -10,6 +18,8 @@ function app($scope, app, $localStorage,$ionicPopup) {
             screen.orientation.lock('portrait');
         }
     });
+    
+    */
     
      $scope.dashboardCall = function(){
      var comp_code = $localStorage.CompanyCode;
