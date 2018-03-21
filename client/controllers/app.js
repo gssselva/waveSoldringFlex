@@ -6,7 +6,6 @@ function app($scope, app, $localStorage,$ionicPopup) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
         }
 
-       
         if (window.screen && window.screen.orientation) {
             screen.orientation.lock('portrait');
         }
