@@ -4,6 +4,11 @@ function app($scope, app, $localStorage,$ionicPopup) {
          if (window.isPlatform && window.isPlatform.powWow() && window.isPlatform.iOS() && window.cordova && window.cordova.plugins) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
         }
+        
+        if (window.StatusBar) {
+            StatusBar.hide();
+            document.body.classList.add('nostatusbar');
+        }
 
         if (window.screen && window.screen.orientation) {
             screen.orientation.lock('portrait');
